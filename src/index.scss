@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+$first-color:#0CD561;
+$link-font:'Roboto';
+$text-font:'Open Sans';
+$btn-raduis:40px;
+body
+{
+    font-family: $text-font;
+    overflow-x: hidden;
+}
+.text-green
+{
+    color: $first-color;
+}
+.bg-green
+{
+    background-color: $first-color;
+}
+.border-green
+{
+    border-color: $first-color;
+}
+.text-first
+{
+    font-family: $link-font;
+    font-size: 32px;
+    font-weight: bold;
+}
+.text-link
+{
+    font-family: $link-font;
+    font-size: 18px;
+    font-weight:600;
+}
+nav .text-link:hover
+{
+    transition: color 0.3s ease-in-out;
+    color: $first-color;
+    font-weight: bold;
+}
+.btn-one
+{
+    padding: 8px 25px;
+    background-color: $first-color;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: $btn-raduis;
+    font-weight: bold;
+    border: 2px solid $first-color;
+}
+.btn-one:hover
+{
+    transition: background 0.3s ease-in-out;
+    padding: 8px 25px;
+    background-color: transparent;
+    color: $first-color;
+    cursor: pointer;
+    border: 2px solid $first-color;
+    outline: none;
+    border-radius: $btn-raduis;
+    font-weight: bold;
+}
+.btn-two
+{
+    padding: 8px 25px;
+    background-color: transparent;
+    color: $first-color;
+    cursor: pointer;
+    border: 2px solid $first-color;
+    outline: none;
+    border-radius: $btn-raduis;
+    font-weight: bold;
+}
+.btn-two:hover
+{
+    transition: background 0.3s ease-in-out;
+    padding: 8px 25px;
+    background-color: $first-color;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border: 2px solid $first-color;
+    border-radius: $btn-raduis;
+    font-weight: bold;
+}
+.figure-1
+{
+    border-top-left-radius: 50px;
+    border-top-right-radius: 300px;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 200px;
+}
+
+@media screen and (min-width:1000px){
+ nav .text-link:hover
+{
+    padding-bottom: 10px;
+    border-bottom: 5px solid $first-color;
+}
+}
+@media screen and (max-width:750px){
+    .text-first
+    {
+        font-size: 25px;
+    }
+   }
+   @media screen and (max-width:555px){
+    .text-first
+    {
+        font-size: 18px;
+    }
+    .text-link
+    {
+        font-size: 14px;
+    }
+   }
