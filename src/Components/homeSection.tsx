@@ -2,7 +2,7 @@ import React from 'react'
 import profil_photo from './../assets/photo_flyers.png'
  const HomeSection=() =>{
   return (
-    <div className='flex md:justify-between justify-center items-center gap-7 flex-wrap md:px-10 px-5 mt-10 w-screen'>
+    <div id='acceuil' className='flex md:justify-between justify-center items-center gap-7 flex-wrap md:px-10 px-5 mt-10 w-screen'>
          <div className="  w-full  md:w-1/2 sm:w-4/5    flex flex-col content-start justify-start items-center gap-5">
              <p className="text-first text-start w-full  mx-0">
                  Salut ,bienvenue sur la page web de Dimi<strong className='text-green'>Dev</strong>
@@ -16,8 +16,8 @@ import profil_photo from './../assets/photo_flyers.png'
              </p>
 
              <div className="flex md:justify-between  justify-center  w-full items-center gap-3 mt-3 flex-wrap">
-                 <a href="#" className="btn-one">Telecharger le CV</a>
-                 <a href="#" className="btn-two">Me Contacter</a>
+             <a href={require('./../assets/CV_dimidev.pdf')} download="cv_dimitribonsou.pdf" className="btn-one">Télécharger le CV</a>
+             <a href="https://wa.me/674606328"  className="btn-two" rel="noreferrer">Me contacter</a>
 
              </div>
          </div>

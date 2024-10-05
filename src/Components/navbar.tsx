@@ -5,28 +5,26 @@ const Navbar = () => {
         Dimi<strong className="text-green ">Dev</strong>
       </span>
       <nav className="flex justify-center items-center gap-7 flex-wrap">
-        <a href="#" className="text-link">
+        <a href="#acceuil" className="text-link">
           Acceuil
         </a>
-        <a href="#" className="text-link">
+        <a href="#about" className="text-link">
           Apropos
         </a>
-        <a href="#" className="text-link">
+        <a href="#competences" className="text-link">
           Competences
         </a>
-        <a href="#" className="text-link">
+        <a href="#services" className="text-link">
           Services
         </a>
-        <a href="#" className="text-link">
+        <a href="#projets" className="text-link">
           Projets
         </a>
-        <a href="#" className="text-link">
+        <a href="#contact" className="text-link">
           Contact
         </a>
       </nav>
-      <a href="#" className="btn-one">
-        Me contacter
-      </a>
+      <a href="https://wa.me/674606328"  className="btn-one" rel="noreferrer">Me contacter</a>
     </div>
   );
 };
