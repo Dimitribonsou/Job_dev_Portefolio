@@ -4,6 +4,8 @@ import Navbar from './Components/navbar';
 import HomeSection from './Components/homeSection';
 import AboutSection from './Components/aboutSection';
 import CompetenceSection from './Components/CompetenceSection';
+import ServiceSection from './Components/ServiceSection';
+import FooterSection from './Components/FooterSection';
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
        <HomeSection/>
        <AboutSection/>
        <CompetenceSection/>
+       <ServiceSection/>
+       <FooterSection/>
     </div>
   );
 }

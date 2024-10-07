@@ -12,6 +12,19 @@ body
 {
     font-family: $text-font;
     overflow-x: hidden;
+    font-size: 14px;
+}
+.text-x
+{
+    font-size:12px;
+}
+.w-43p
+{
+    width: 42%;
+}
+.w-26p
+{
+    width: 26%;
 }
 .text-green
 {
@@ -39,7 +52,7 @@ body
 }
 nav .text-link:hover
 {
-    transition: color 0.3s ease-in-out;
+    transition: color 0.4s ease-in-out;
     color: $first-color;
     font-weight: bold;
 }
@@ -57,7 +70,8 @@ nav .text-link:hover
 }
 .btn-one:hover
 {
-    transition: background 0.3s ease-in-out;
+    transition: background 0.4s  ease-in-out;
+    transition: color 0.5s  ease-in-out;
     padding: 8px 25px;
     background-color: transparent;
     color: $first-color;
@@ -80,7 +94,8 @@ nav .text-link:hover
 }
 .btn-two:hover
 {
-    transition: background 0.3s ease-in-out;
+    transition: background 0.4s  ease-in-out;
+    transition: color 0.5s  ease-in-out;
     padding: 8px 25px;
     background-color: $first-color;
     color: #fff;
@@ -102,6 +117,7 @@ nav .text-link:hover
 @media screen and (min-width:1000px){
  nav .text-link:hover
 {
+    transition: padding 0.4s ease-in;
     padding-bottom: 10px;
     border-bottom: 5px solid $first-color;
 }
