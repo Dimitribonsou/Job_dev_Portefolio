@@ -1,10 +1,9 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 import './App.scss';
 import Navbar from './Components/navbar';
 import HomeSection from './Components/homeSection';
 import AboutSection from './Components/aboutSection';
+import CompetenceSection from './Components/CompetenceSection';
 
 function App() {
   return (
@@ -13,6 +12,7 @@ function App() {
        <Navbar/>
        <HomeSection/>
        <AboutSection/>
+       <CompetenceSection/>
     </div>
   );
 }
