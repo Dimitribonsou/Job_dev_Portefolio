@@ -113,7 +113,23 @@ nav .text-link:hover
     border-bottom-right-radius: 100px;
     border-bottom-left-radius: 200px;
 }
+.service-title
+{
+     font-size:20px;
+}
 
+@media screen  and (max-width:400px){
+      .text-link{
+         font-size:10px!important;
+      }
+      .service-title{
+        font-size:15px;
+      }
+      .service-desc
+      {
+        font-size: 12px !important;
+      }
+}
 @media screen and (min-width:1000px){
  nav .text-link:hover
 {
@@ -137,4 +153,14 @@ nav .text-link:hover
     {
         font-size: 14px;
     }
+   }
+   @media screen and (min-width:1000px) and (max-width:1440px)
+   {
+    .service-title{
+        font-size:15px;
+      }
+      .service-desc
+      {
+        font-size: 12px !important;
+      }
    }
