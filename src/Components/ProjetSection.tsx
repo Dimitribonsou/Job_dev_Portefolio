@@ -15,13 +15,13 @@ const ProjetSection = () => {
       </div>
       {/* <CategorieProjet /> */}
       <div className="flex justify-center sm:justify-between items-center md:gap-10 lg:mt-8 mt-3 gap-3 flex-wrap w-full md:px-10 px-1">
-        <ProjetItem title="Maquete d'une plateforme de banque d'epreuve pour etudiant" />
-        <ProjetItem title="Porte-folio pour développeur" />
-        <ProjetItem title="Plateforme web de présentation des produits" />
+        <ProjetItem title="Maquete d'une plateforme de banque d'epreuve pour etudiant" lien="https://www.figma.com/design/lXZi5RuAOJ4E5TFjYiak6v/Projet_banque_epreuve?node-id=117-205&node-type=frame&t=7RppIWf7Er0GfcUi-0" />
+        <ProjetItem title="Porte-folio pour développeur" lien="https://dimitribonsou-website.vercel.app/"/>
+        <ProjetItem title="Plateforme web de présentation des produits" lien="https://dimishop.vercel.app"/>
+        <ProjetItem title="Réalisation du site web de  DECODE"  lien="https://www.decode.org/"/>
         <ProjetItem title="Application de génération de carte d'étudiant" />
         <ProjetItem title="Site de présentation d'une entreprise de bâtiment" />
         <ProjetItem title="Site de présentation d'une entreprise de prestation de service" />
-        <ProjetItem title="Réalisation du site web de  DECODE" />
         <ProjetItem title="Application de
 gestion des informations d'un employer" />
       </div>
