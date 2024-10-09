@@ -15,7 +15,7 @@ const ServicesItem = (props:servicetype) => {
         {props.description}
       </p>
       <div className="flex justify-end items-center   w-full">
-          <a href="#projet" className="btn-two text-green  ">Voir plus</a>
+          <a href="#projets" className="btn-two text-green  ">Voir plus</a>
       </div>
     </div>
   );
