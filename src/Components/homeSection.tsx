@@ -1,5 +1,5 @@
 import React from 'react'
-import profil_photo from './../assets/Photo_acceuil_demi.png'
+import profil_photo from './../assets/photo_flyers.png'
  const HomeSection=() =>{
   return (
     <div id='acceuil' className='flex md:justify-between justify-center items-center gap-7 flex-wrap md:px-10 px-5 mt-10 w-screen'>
@@ -21,7 +21,7 @@ import profil_photo from './../assets/Photo_acceuil_demi.png'
              </div>
          </div>
          <div className=' w-full  md:w-1/4 sm:w-4/5 relative   flex flex-col content-start justify-start items-center gap-5 bg-green h-60 figure-1'>
-              <img src={profil_photo} alt="photo de profil"  className='absolute top-0 left-1/3 -translate-x-1/3 -translate-y-11 w-full h-52'/>
+              <img src={profil_photo} alt=" profil"  className='absolute top-0 left-1/3 -translate-x-1/3 -translate-y-14 w-96 h-72'/>
          </div>
     </div>
   )

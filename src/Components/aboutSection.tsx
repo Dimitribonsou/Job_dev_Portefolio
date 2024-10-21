@@ -21,7 +21,7 @@ const AboutSection = () => {
           monde du génie logiciel c’est pourquoi je me lance des défis
           quotidiens dans la découverte des nouveautés sur les technologies
           basée sur les langages
-          <strong className="text-green"> Javascript et C# .</strong>
+          <strong className="text-green text-base  font-bold">  Javascript et C# .</strong>
         </p>
         <div className="flex w-full justify-between items-center flex-wrap ">
           <div className="flex flex-col gap-1 justify-center items-center  md:w-1/5 w-1/2  mb-1">
@@ -89,8 +89,8 @@ const AboutSection = () => {
           </a>
         </div>
       </div>
-      <div className=" order-2  md:order-1 border-x-4 border-y-4 border-green xl:w-1/4   sm:w-4/5 w-11/12 min-w-80 h-80 flex justify-start items-center gap-5 relative md:mt-0 mt-10">
-        <div className="flex  w-1/6  h-full flex-col justify-start  items-start gap-5 py-5 px-2">
+      <div className=" order-2  md:order-1 border-x-4 border-y-4 border-green xl:w-1/4 -z-20  sm:w-4/5 w-11/12 min-w-80 h-80 flex justify-start items-center gap-5 relative md:mt-0 mt-10">
+        <div className="flex  w-1/6 z-40  h-full flex-col justify-start  items-start gap-5 py-5 px-2">
           <a
             href="https://www.facebook.com/Dimipro"
             target="_blank"
@@ -126,7 +126,7 @@ const AboutSection = () => {
         <img
           src={profil_photo}
           alt="about profil"
-          className="absolute top-0 left-2/3 -translate-x-2/3 -translate-y-20 ms-5 md:ms-0 h-96 w-auto"
+          className="absolute top-0 left-2/3 -translate-x-2/3 -translate-y-20 ms-5 md:ms-0 h-96 w-auto -z-10"
         />
         <div className="  flex justify-center items-center w-20 h-20 rounded-full bg-green absolute top-0 left-full -translate-x-2/3 -translate-y-10">
           <img src={chapeau} alt="chapeau laureat" className="w-4/5 " />
