@@ -11,7 +11,7 @@ const ProjetItem = (props:typeProjet) => {
           <img
             src={image_projet}
             alt="imageprojet"
-            className="w-full md:h-24 h-20"
+            className="w-full  h-20"
           />
         </a>
       </div>

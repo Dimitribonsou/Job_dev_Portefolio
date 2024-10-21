@@ -72,7 +72,7 @@ const AboutSection = () => {
             <span>Douala</span>
           </div>
         </div>
-        <div className=" w-full flex md:justify-between  justify-center items-center gap-5 flex-wrap">
+        <div className=" w-full flex   justify-center items-center gap-5 md:gap-10 flex-wrap">
           <a
             href={require("./../assets/CV_dimidev.pdf")}
             download="cv_dimitribonsou.pdf"
@@ -126,10 +126,10 @@ const AboutSection = () => {
         <img
           src={profil_photo}
           alt="about profil"
-          className="absolute top-0 left-2/3 -translate-x-2/3 -translate-y-20 w-4/5 h-96"
+          className="absolute top-0 left-2/3 -translate-x-2/3 -translate-y-20 ms-5 md:ms-0 h-96 w-auto"
         />
         <div className="  flex justify-center items-center w-20 h-20 rounded-full bg-green absolute top-0 left-full -translate-x-2/3 -translate-y-10">
-          <img src={chapeau} alt="chapeau laureat" className="w-4/5" />
+          <img src={chapeau} alt="chapeau laureat" className="w-4/5 " />
         </div>
       </div>
     </div>
