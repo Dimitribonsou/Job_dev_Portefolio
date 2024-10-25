@@ -14,6 +14,15 @@ const ProjetSection = () => {
         </p>
         <span className="w-3/5 h-1 bg-green "></span>
       </div>
+      <div className="title_projet">
+        <p className="text-base md:text-xl me-3">
+          Les compétences mentionner plus haut ont été mis en pratique pour
+          réaliser les projets suivants .
+          <strong className="text-green">
+            Cliquer sur la description du projet pour voir le resultat du projet.
+          </strong>
+        </p>
+      </div>
       <div className="flex justify-center sm:justify-between items-center md:gap-10 lg:mt-8 mt-3 gap-3 flex-wrap w-full md:px-10 px-1">
         {projets.map((projet: porjetType, index: number) => (
           <ProjetItem key={index} title={projet.title} lien={projet.lien} />
