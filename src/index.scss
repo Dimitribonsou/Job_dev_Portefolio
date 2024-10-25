@@ -42,7 +42,7 @@ body
 {
     font-family: $link-font;
     font-size: 32px;
-    font-weight: bold;
+    // font-weight: bold;
 }
 .text-link
 {
@@ -117,7 +117,10 @@ nav .text-link:hover
 {
      font-size:20px;
 }
-
+.prof-size
+{
+    font-size: 18px;
+}
 @media screen  and (max-width:400px){
      
       .service-title{
@@ -138,6 +141,10 @@ nav .text-link:hover
     transition: padding 0.4s ease-in;
     padding-bottom: 10px;
     border-bottom: 5px solid $first-color;
+}
+.prof-size
+{
+    font-size: 25px;
 }
 }
 @media screen and (max-width:750px){
