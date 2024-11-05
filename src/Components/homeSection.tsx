@@ -37,7 +37,7 @@ const HomeSection = () => {
     >
       <div className="  w-full  md:w-1/2 sm:w-4/5    flex flex-col content-start justify-start items-center gap-5">
         <p className="text-first text-start w-full   mx-0">
-          Salut ,bienvenue sur le porfolio de Dimi
+          Salut ,bienvenue sur le site web  de Dimi
           <strong className="text-green">Dev</strong>
         </p>
         <div className="flex  w-full jusfify-start items-center gap-5 text-link ">
