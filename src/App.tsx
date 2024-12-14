@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.scss';
+import logo from './assets/logo_dimidev.png'
+import { Helmet } from 'react-helmet';
 import Navbar from './Components/navbar';
 import HomeSection from './Components/homeSection';
 import AboutSection from './Components/aboutSection';
@@ -10,7 +12,19 @@ import ProjetSection from './Components/ProjetSection';
 
 function App() {
   return (
+
     <div>
+      {/* ajout du block helmet pour le referencement */}
+        <Helmet htmlAttributes={{ lang: 'fr' }}>
+                  <title>Développeur Web et Mobile à Douala, Cameroun</title>
+                  <meta name="description" content="Développeur web et mobile à Douala, Cameroun. Spécialisé dans le développement de solutions web personnalisées et d'applications mobiles." />
+                  <meta name="keywords" content="développeur web, applications mobiles, Douala, Cameroun" />
+                  <meta property="og:title" content="Développeur Web et Mobile à Douala, Cameroun" />
+                  <meta property="og:description" content="Développeur web et mobile à Douala, Cameroun. Spécialisé dans le développement de solutions web personnalisées et d'applications mobiles." />
+                  <meta property="og:url" content="https://dimitribonsou-website.vercel.app/" />
+                  <meta property="og:image" content={logo} />
+                  <meta name="google-site-verification" content="C5ftg5VXj5bdp7FA8aBYQZt-xwKjbTg4xNj8wQyzUZM" />
+        </Helmet>
        {/* appel des differents composants */}
        <Navbar/>
        <HomeSection/>

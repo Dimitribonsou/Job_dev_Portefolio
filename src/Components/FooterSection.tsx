@@ -8,7 +8,6 @@ const  FooterSection =()=> {
          <input type="text" placeholder='Entrer votre email pour me suivre' className="rounded-tl-md rounded-bl-md  h-full rounded-x-2 outline-none border-none shadow w-full md:w-1/2 indent-6" />
          <button className="text-white bg-black hover:bg-transparent border-2 transition-all border-black hover:text-black h-full px-3 rounded-tr-md rounded-br-md">S'abonner</button>
         </div>
-
     </div>
   )
 }
