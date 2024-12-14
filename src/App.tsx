@@ -18,9 +18,9 @@ function App() {
         <Helmet htmlAttributes={{ lang: 'fr' }}>
                   <title>Développeur Web et Mobile à Douala, Cameroun</title>
                   <meta name="description" content="Développeur web et mobile à Douala, Cameroun. Spécialisé dans le développement de solutions web personnalisées et d'applications mobiles." />
-                  <meta name="keywords" content="développeur web, applications mobiles, Douala, Cameroun" />
+                  <meta name="keywords" content="développeur web douala,développeur web cameroun, applications mobiles,dimidev,bonsou dimitri, Douala, Cameroun" />
                   <meta property="og:title" content="Développeur Web et Mobile à Douala, Cameroun" />
-                  <meta property="og:description" content="Développeur web et mobile à Douala, Cameroun. Spécialisé dans le développement de solutions web personnalisées et d'applications mobiles." />
+                  <meta property="og:description" content="Développeur web et mobile à Douala, Cameroun. Spécialisé dans le développement de solutions web personnalisées et d'applications mobiles pour les entreprises." />
                   <meta property="og:url" content="https://dimitribonsou-website.vercel.app/" />
                   <meta property="og:image" content={logo} />
                   <meta name="google-site-verification" content="C5ftg5VXj5bdp7FA8aBYQZt-xwKjbTg4xNj8wQyzUZM" />
