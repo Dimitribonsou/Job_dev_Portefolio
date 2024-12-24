@@ -1,10 +1,12 @@
+import useSticky from '../hooks/fixedNavbar';
 import logo_dimidev from './../assets/logo_dimidev.png'
 import { FaFacebookF, FaWhatsapp, FaPaperPlane, FaEnvelope } from "react-icons/fa"; //importer les  react-icon pour acceder aux icons
 const Navbar = () => {
+  const { stickyRef, sticky } = useSticky();
   return (
-    <div className="flex justify-between items-center gap-3 md:px-10  px-3 py-3 shadow-lg min-h-24 flex-wrap mb-5">
+    <div ref={stickyRef} className={`flex justify-between items-center gap-3 md:px-10  px-3 py-3 shadow-md shadow-slate-50 sha min-h-24 flex-wrap mb-5 ${sticky ? 'fixed top-0 left-0 w-full text-black shadow-green-400 bg-white z-50' : ''}`}>
       <span className="text-first font-bold">
-        <img src={logo_dimidev} alt='logo' className="w-20 h-14"></img>
+        <img src={logo_dimidev} alt='logo' className="w-20 h-14 bg-white"></img>
       </span>
       <nav className="order-3 md:order-2 flex justify-center items-center gap-7 flex-wrap">
         <a href="#acceuil" className="text-link">

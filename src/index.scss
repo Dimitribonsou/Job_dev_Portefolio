@@ -13,7 +13,31 @@ body
     font-family: $text-font;
     overflow-x: hidden;
     font-size: 14px;
+    background-color: #000;
+    color: #fff;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+/* Appliquer à l'élément contenant le contenu défilant */
+/* Pour Chrome, Safari et Edge */
+body::-webkit-scrollbar {
+    width: 20px; /* Largeur de la scrollbar */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(to top,$first-color,orange,purple); /* Couleur du curseur */
+    border-radius: 10px; /* Arrondir les bords du curseur */
+}
+
+body::-webkit-scrollbar-track {
+    background: #000; /* Couleur de la piste */
+    width: 100px;
+    padding: 25px;
+}
+
+
 .text-x
 {
     font-size:12px;
@@ -48,13 +72,13 @@ body
 {
     font-family: $link-font;
     font-size: 18px;
-    font-weight:600;
+    font-weight:400;
+    padding-bottom: 10px;
 }
 nav .text-link:hover
 {
-    transition: color 0.4s ease-in-out;
+    transition: color 0.8s ease-in-out;
     color: $first-color;
-    font-weight: bold;
 }
 .btn-one
 {
@@ -65,7 +89,7 @@ nav .text-link:hover
     border: none;
     outline: none;
     border-radius: $btn-raduis;
-    font-weight: bold;
+    // font-weight: bold;
     border: 2px solid $first-color;
 }
 .btn-one:hover
@@ -79,7 +103,6 @@ nav .text-link:hover
     border: 2px solid $first-color;
     outline: none;
     border-radius: $btn-raduis;
-    font-weight: bold;
 }
 .btn-two
 {
@@ -90,7 +113,7 @@ nav .text-link:hover
     border: 2px solid $first-color;
     outline: none;
     border-radius: $btn-raduis;
-    font-weight: bold;
+    // font-weight: bold;
 }
 .btn-two:hover
 {
@@ -104,7 +127,6 @@ nav .text-link:hover
     outline: none;
     border: 2px solid $first-color;
     border-radius: $btn-raduis;
-    font-weight: bold;
 }
 .figure-1
 {
@@ -138,8 +160,7 @@ nav .text-link:hover
 @media screen and (min-width:1000px){
  nav .text-link:hover
 {
-    transition: padding 0.4s ease-in;
-    padding-bottom: 10px;
+    transition: border 0.2s ease-in;
     border-bottom: 5px solid $first-color;
 }
 .prof-size

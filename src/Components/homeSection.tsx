@@ -51,7 +51,7 @@ const HomeSection = () => {
           framework avec plusieurs projets réalisés je suis disponibles pour
           transformer vos idées en solution numerique .
         </p>
-        <div className="flex  justify-center  w-full items-center gap-3 md:gap-10 mt-3 flex-wrap">
+        <div className="flex  justify-center  w-full items-center gap-3 md:gap-10 mt-3 flex-wrap z-40 ">
           <a
             href={require("./../assets/CV_dimidev.pdf")}
             download="cv_dimitribonsou.pdf"
@@ -72,7 +72,7 @@ const HomeSection = () => {
         <img
           src={profil_photo}
           alt=" profil"
-          className="absolute top-0 left-1/3 -translate-x-1/3 -translate-y-14 w-96 h-72"
+          className="absolute top-0 left-1/3  -translate-x-1/3 -translate-y-14 w-96 h-72"
         />
       </div>
     </div>

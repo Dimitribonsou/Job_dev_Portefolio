@@ -1,5 +1,6 @@
 import React from "react";
 import profil_photo from "./../assets/photo_flyers.png";
+import photo_dimi from "./../assets/photo_acceuil.png"
 import chapeau from "./../assets/chapeau.png";
 import { FaFacebookF, FaWhatsapp, FaPaperPlane, FaEnvelope } from "react-icons/fa"; //importer les  react-icon pour acceder aux icons
 
@@ -12,7 +13,7 @@ const AboutSection = () => {
       <div className=" order-1 md:order-2 flex flex-col gap-4 md:w-4/5  xl:w-2/3 w-11/12 justify-start items-center md:h-80 h-fit   ">
         <div className="flex flex-col justify-center items-center gap-1">
           <p className="text-first text-green">
-            APROPOS DE <strong className="text-black">MOI</strong>
+            APROPOS DE <strong className="text-white">MOI</strong>
           </p>
           <span className="w-3/5 h-1 bg-green "></span>
         </div>
@@ -90,7 +91,7 @@ const AboutSection = () => {
         </div>
       </div>
       <div className=" order-2  md:order-1 border-x-4 border-y-4 border-green xl:w-1/4   sm:w-4/5 w-11/12 min-w-80 h-80 flex justify-start items-center gap-5 relative md:mt-0 mt-10">
-        <div className="flex  w-1/6   h-full flex-col justify-start  items-start gap-5 py-5 px-2">
+        <div className="flex  w-1/6   h-full flex-col justify-start  items-start gap-5 py-5 px-2 z-30">
           <a
             href="https://web.facebook.com/profile.php?id=100087894947502"
             target="_blank"
@@ -124,9 +125,9 @@ const AboutSection = () => {
           </a>
         </div>
         <img
-          src={profil_photo}
+          src={photo_dimi}
           alt="about profil"
-          className="absolute top-0 left-2/3 -translate-x-2/3 -translate-y-20 ms-5 md:ms-0 h-96 w-5/6  z-20"
+          className="absolute top-0 left-1/3 md:left-1/2 -translate-x-1/3 md:-translate-x-1/2 -translate-y-28 ms-5 md:ms-0 w-80 scale-110    md:scale-150   z-20"
         />
         <div className="  flex justify-center items-center w-20 h-20 rounded-full bg-green absolute top-0 left-full -translate-x-2/3 -translate-y-10">
           <img src={chapeau} alt="chapeau laureat" className="w-4/5 " />

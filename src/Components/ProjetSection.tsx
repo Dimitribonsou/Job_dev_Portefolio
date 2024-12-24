@@ -10,7 +10,7 @@ const ProjetSection = () => {
         className="flex flex-col justify-center items-center gap-1 "
       >
         <p className="text-first text-green ">
-          MES <strong className="text-black">PROJETS</strong>
+          MES <strong className="text-white">PROJETS</strong>
         </p>
         <span className="w-3/5 h-1 bg-green "></span>
       </div>
