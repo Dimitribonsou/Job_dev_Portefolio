@@ -18,6 +18,7 @@ const ServicesItem = (props:servicetype) => {
           <a href="#projets" className="btn-two text-green  ">Voir plus</a>
       </div>
     </div>
+
   );
 };
 
