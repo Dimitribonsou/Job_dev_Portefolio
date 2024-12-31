@@ -62,7 +62,7 @@ const CompetenceSection = () => {
             <div className="flex flex-col justify-start items-center gap-2 w-96 h-50  px-5 py-5 rounded-lg text-black bg-white hover:scale-105">
                 <FontAwesomeIcon icon={faCoffee} className="text-green text-3xl" />
                 <span className="text-base font-bold text-green text-center"> Framework  </span>
-                <span className="text-center font-bold "> React,React-native,Angular,Bootstrap,Tailwind CSS, Typescript</span> 
+                <span className="text-center font-bold "> React , React-native , Angular , Bootstrap , Tailwind CSS , Typescript</span> 
             </div>
         </div>
         <div className=" order-1  border-x-4 border-y-4 border-green xl:w-1/4   sm:w-4/5 w-11/12 min-w-80 h-80 flex flex-col justify-start items-center gap-4 relative md:mt-0 mt-10 rounded-full py-9">
