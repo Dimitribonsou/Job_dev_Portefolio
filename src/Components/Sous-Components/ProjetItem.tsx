@@ -5,13 +5,13 @@ interface typeProjet{
 }
 const ProjetItem = (props:typeProjet) => {
   return (
-    <div className=" w-5/12  lg:w-1/5  h-40   shadow-lg  rounded-xl  flex flex-col  justify-between items-center  border-green-200 border-x-2 border-y-2 cursor-pointer hover:scale-105">
-      <div className="w-full">
+    <div className=" w-5/12  lg:w-1/5  h-40   shadow-lg  rounded-xl  flex flex-col  justify-between items-center    cursor-pointer hover:scale-105">
+      <div className="w-full rounded-xl">
         <a href={props.lien} target="blank">
           <img
             src={image_projet}
             alt="imageprojet"
-            className="w-full  h-20"
+            className="w-full h-20 md:h-24 rounded-tl-lg rounded-tr-lg"
           />
         </a>
       </div>

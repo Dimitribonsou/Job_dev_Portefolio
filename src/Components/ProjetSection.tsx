@@ -18,9 +18,9 @@ const ProjetSection = () => {
         <p className="text-base md:text-xl me-3">
           Les compétences mentionner plus haut ont été mis en pratique pour
           réaliser les projets suivants .
-          <strong className="text-green">
+          <span className="text-green">
             Cliquer sur la description du projet pour voir le resultat du projet.
-          </strong>
+          </span>
         </p>
       </div>
       <div className="flex justify-center sm:justify-between items-center md:gap-10 lg:mt-8 mt-3 gap-3 flex-wrap w-full md:px-10 px-1">
