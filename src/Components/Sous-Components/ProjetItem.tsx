@@ -5,7 +5,7 @@ interface typeProjet{
 }
 const ProjetItem = (props:typeProjet) => {
   return (
-    <div className=" w-5/12  lg:w-1/5  h-40   shadow-lg  rounded-xl  flex flex-col  justify-between items-center    cursor-pointer hover:scale-105">
+    <div className=" w-5/12  lg:w-1/5  h-40   shadow-lg  rounded-xl  flex flex-col  justify-between items-center  bg-white  cursor-pointer hover:scale-105">
       <div className="w-full rounded-xl">
         <a href={props.lien} target="blank">
           <img
