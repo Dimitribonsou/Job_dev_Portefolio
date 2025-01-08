@@ -6,7 +6,7 @@ const  FooterSection =()=> {
         <span className="text-white font-bold text-xl"> @dimidev 2024 tout droit reservé  </span>
         <div className="flex justify-end items-center w-11/12 md:w-1/2 lg:w-5/12 h-10 min-w-64">
          <input type="text" placeholder='Entrer votre email pour me suivre' className="rounded-tl-md rounded-bl-md  h-full rounded-x-2 outline-none border-none shadow w-full md:w-1/2 indent-6 text-black" />
-         <button className="text-white bg-black hover:bg-transparent border-2 transition-all border-black hover:text-black h-full px-3 rounded-tr-md rounded-br-md">S'abonner</button>
+         <button className="text-white bg-[#2c2b2b] hover:bg-transparent border-2 transition-all border-[#2c2b2b] hover:text-[#2c2b2b] h-full px-3 rounded-tr-md rounded-br-md">S'abonner</button>
         </div>
     </div>
   )
