@@ -1,20 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 $first-color:#0CD561;
-$link-font:'Roboto';
-$text-font:'Open Sans';
+$link-font:'Poppins';
+$text-font:'Montserrat';
 $btn-raduis:40px;
 body
 {
+    width: 100vw;
+    height: 100vh;
     font-family: $text-font;
     overflow-x: hidden;
     font-size: 14px;
-    background-color: #5B5757;
-    color: #fff;
+    // background-color: #5B5757;
+    background-color: #fff;
+    color:black;
 }
 html {
     scroll-behavior: smooth;
@@ -78,7 +81,6 @@ body::-webkit-scrollbar-track {
 nav .text-link:hover
 {
     transition: color 0.8s ease-in-out;
-    color: $first-color;
 }
 .btn-one
 {
@@ -162,7 +164,7 @@ nav .text-link:hover
  nav .text-link:hover
 {
     transition: border 0.2s ease-in;
-    border-bottom: 5px solid $first-color;
+    border-bottom: 5px solid #fff;
 }
 .prof-size
 {

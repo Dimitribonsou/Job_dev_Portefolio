@@ -4,13 +4,13 @@ import { porjetType } from "../types/projetType"; // Importation du type
 
 const ProjetSection = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-5 mt-10 px-10">
+    <div   className="flex flex-col justify-center items-center gap-5 mt-10 px-10">
       <div
-        id="projets"
+      id="projets" 
         className="flex flex-col justify-center items-center gap-1 "
       >
         <p className="text-first text-green ">
-          MES <strong className="text-white">PROJETS</strong>
+          MES <strong className="text-black">PROJETS</strong>
         </p>
         <span className="w-3/5 h-1 bg-green "></span>
       </div>

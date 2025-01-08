@@ -6,7 +6,7 @@ interface servicetype{
 }
 const ServicesItem = (props:servicetype) => {
   return (
-    <div className=" w-11/12 sm:w-43p md:w-5/12  lg:w-3/12 xl:w-26p h-72 px-5 py-3 border-x-2 border-y-2 shadow-xl border-green rounded-xl relative flex flex-col justify-between items-center gap-1">
+    <div className=" w-11/12 sm:w-43p md:w-5/12  lg:w-3/12 xl:w-26p   h-72 px-5 py-3 border-x-2 border-y-2 shadow-xl shadow-green-200 border-green rounded-xl relative flex flex-col justify-between items-center gap-1">
       <div className="bg-green w-16 h-16 rounded-full absolute -top-6 left-1/2 -translate-x-1/3 -translate-y-2 flex justify-center items-center">
          <img src={croix} alt="croix" className="w-1/2"></img>
       </div>

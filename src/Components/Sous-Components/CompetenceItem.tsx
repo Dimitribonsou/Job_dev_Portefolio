@@ -15,7 +15,7 @@ const CompetenceItem = (props: {
     //   </div>
     //   <span className="text-link ms-10">{props.technologies}</span>
     // </div>
-    <div className="flex flex-col justify-start items-center gap-2 w-52 h-50  px-5 py-5 rounded-lg text-black bg-white hover:scale-105">
+    <div className="flex flex-col justify-start items-center gap-2 w-52 h-50  px-5 py-5 rounded-lg text-black bg-green-100 hover:scale-105">
           <FontAwesomeIcon icon={faCoffee} className="text-green text-3xl" />
           <span className="text-base font-bold text-green text-center">  {props.groupetitle}</span>
           <span className="text-center font-bold "> {props.technologies}</span> 

@@ -5,13 +5,12 @@ import { serviceType } from "../types/serviceType";
 
 const ServiceSection = () => {
   return (
-    <div className="flex flex-col justify-center items-center gap-5 mt-10 px-10">
+    <div  className="flex flex-col justify-center items-center gap-5 mt-10 px-10">
       <div
-        id="services"
         className="flex flex-col justify-center items-center gap-1 "
       >
-        <p className="text-first text-green ">
-          MES <strong className="text-white">SERVICES</strong>
+        <p id="services" className="text-first text-green ">
+          MES <strong className="text-black">SERVICES</strong>
         </p>
         <span className="w-3/5 h-1 bg-green "></span>
       </div>

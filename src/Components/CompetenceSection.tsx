@@ -22,12 +22,12 @@ import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 const CompetenceSection = () => {
   return (
     <div
-      id="competences"
+    
       className="mt-3 flex flex-col justify-center items-center gap-10 lg:px-10 px-5"
     >
-      <div className="flex flex-col justify-center items-center gap-1 ">
+      <div  className="flex flex-col justify-center items-center gap-1 ">
         <p className="text-first text-green ">
-          MES <strong className="text-white">COMPETENCES</strong>
+          MES <strong className="text-black">COMPETENCES</strong>
         </p>
         <span className="w-3/5 h-1 bg-green "></span>
       </div>
@@ -37,8 +37,8 @@ const CompetenceSection = () => {
         langages de progammation , framework ,outils et technologies en fonction
         de l'etape de développement et de la grandeur du projet .
       </p>
-      <div className=" flex xl:justify-center justify-center items-center lg:gap-14 gap-10  flex-wrap md:px-10 px-5  w-screen h-fit md:mb-20 mb-24">
-        <div className=" order-2 flex flex-wrap  gap-4 md:w-full  xl:w-2/3 w-11/12    justify-center     items-center  h-fit   ">
+      <div  className=" flex xl:justify-center justify-center items-center lg:gap-14 gap-10  flex-wrap md:px-10 px-5  w-screen h-fit md:mb-20 mb-24">
+        <div  className=" order-2 flex flex-wrap  gap-4 md:w-full  xl:w-2/3 w-11/12    justify-center     items-center  h-fit   ">
           <CompetenceItem groupetitle="Analyse" technologies="UML,MERISE" />
           <CompetenceItem
             groupetitle="WEB DESIGN"
@@ -59,13 +59,13 @@ const CompetenceSection = () => {
             groupetitle="BASE DE DONNEE"
             technologies="MYSQL,MONGODB"
           />
-            <div className="flex flex-col justify-start items-center gap-2 w-96 h-50  px-5 py-5 rounded-lg text-black bg-white hover:scale-105">
+            <div className="flex flex-col justify-start items-center gap-2 w-96 h-50  px-5 py-5 rounded-lg text-black bg-green-100 hover:scale-105">
                 <FontAwesomeIcon icon={faCoffee} className="text-green text-3xl" />
                 <span className="text-base font-bold text-green text-center"> Framework  </span>
                 <span className="text-center font-bold "> React , React-native , Angular , Bootstrap , Tailwind CSS , Typescript</span> 
             </div>
         </div>
-        <div className=" order-1  border-x-4 border-y-4 border-green xl:w-1/4   sm:w-4/5 w-11/12 min-w-80 h-80 flex flex-col justify-start items-center gap-4 relative md:mt-0 mt-10 rounded-full py-9">
+        <div  className=" order-1  border-x-4 border-y-4 border-green xl:w-1/4   sm:w-4/5 w-11/12 min-w-80 h-80 flex flex-col justify-start items-center gap-4 relative md:mt-0 mt-10 rounded-full py-9">
           <BlockImageCompetence
             image1={logo_angular}
             image2={logo_react}

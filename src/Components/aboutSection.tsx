@@ -7,13 +7,12 @@ import { FaFacebookF, FaWhatsapp, FaPaperPlane, FaEnvelope } from "react-icons/f
 const AboutSection = () => {
   return (
     <div
-      id="about"
-      className=" flex xl:justify-between justify-center items-center gap-5 flex-wrap md:px-10 px-5 mt-20 w-screen h-fit md:mb-20 mb-24"
+      className=" flex xl:justify-between justify-center items-center gap-5 flex-wrap md:px-10 px-5 mt-20 w-screen min-h-fit h-3/4 md:mb-20 mb-24"
     >
       <div className=" order-1 md:order-2 flex flex-col gap-4 md:w-4/5  xl:w-2/3 w-11/12 justify-start items-center md:h-80 h-fit   ">
         <div className="flex flex-col justify-center items-center gap-1">
           <p className="text-first text-green">
-            APROPOS DE <strong className="text-white">MOI</strong>
+            APROPOS DE <strong className="text-black">MOI</strong>
           </p>
           <span className="w-3/5 h-1 bg-green "></span>
         </div>
@@ -48,7 +47,7 @@ const AboutSection = () => {
             <span>674606328</span>
           </div>
         </div>
-        <div className="flex w-full justify-between items-center flex-wrap ">
+        <div id="competences" className="flex w-full justify-between items-center flex-wrap ">
           <div className="flex flex-col gap-1 justify-center items-center md:w-1/5 w-1/2 mb-1">
             <span className="text-link">GITHUB</span>
             <a
@@ -73,7 +72,7 @@ const AboutSection = () => {
             <span>Douala</span>
           </div>
         </div>
-        <div className=" w-full flex   justify-center items-center gap-5 md:gap-10 flex-wrap">
+        <div    className=" w-full flex   justify-center items-center gap-5 md:gap-10 flex-wrap">
           <a
             href={require("./../assets/CV_dimidev.pdf")}
             download="cv_dimitribonsou.pdf"
@@ -90,7 +89,7 @@ const AboutSection = () => {
           </a>
         </div>
       </div>
-      <div className=" order-2  md:order-1 border-x-4 border-y-4 border-green xl:w-1/4   sm:w-4/5 w-11/12 min-w-80 h-80 flex justify-start items-center gap-5 relative md:mt-0 mt-10">
+      <div className=" order-2 bg-green-50  md:order-1 border-x-4 border-y-4 border-green xl:w-1/4   sm:w-4/5 w-11/12 min-w-80 h-80 flex justify-start items-center gap-5 relative md:mt-0 mt-10">
         <div className="flex  w-1/6   h-full flex-col justify-start  items-start gap-5 py-5 px-2 z-30">
           <a
             href="https://web.facebook.com/profile.php?id=100087894947502"
@@ -104,13 +103,15 @@ const AboutSection = () => {
             href="https://wa.me/674606328"
             target="_blank"
             rel="noopener noreferrer"
+            about="naviagtion vers whatsapp"
             className="flex justify-center items-center w-14 h-14 rounded-full bg-green text-light px-3 hover:scale-110 border-4 border-green cursor-pointer"
           >
-            <FaWhatsapp className="text-white text-2xl" />
+            <FaWhatsapp className="text-white text-2xl"  />
           </a>
           <a
             href="https://t.me/dimidev237"
             target="_blank"
+            about="naviagtion vers telegramme"
             rel="noopener noreferrer"
             className="flex justify-center items-center w-14 h-14 rounded-full bg-green text-light px-3 hover:scale-110 border-4 border-green cursor-pointer"
           >
@@ -119,6 +120,7 @@ const AboutSection = () => {
           <a
             href="mailto:dimitribonsou26@gmail.com"
             rel="noopener noreferrer"
+            about="naviagtion vers email"
             className="flex justify-center items-center w-14 h-14 rounded-full bg-green text-light px-3 hover:scale-110 border-4 border-green cursor-pointer"
           >
             <FaEnvelope className="text-white text-2xl" />
