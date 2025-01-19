@@ -92,7 +92,7 @@ const AboutSection = () => {
       <div className=" order-2 bg-green-50  md:order-1 border-x-4 border-y-4 border-green xl:w-1/4   sm:w-4/5 w-11/12 min-w-80 h-80 flex justify-start items-center gap-5 relative md:mt-0 mt-10">
         <div className="flex  w-1/6   h-full flex-col justify-start  items-start gap-5 py-5 px-2 z-30">
           <a
-            href="https://web.facebook.com/profile.php?id=100087894947502"
+            href="https://web.facebook.com/profile.php?id=61571160665639"
             target="_blank"
             rel="noopener noreferrer"
             className="flex justify-center items-center w-14 h-14 rounded-full bg-green text-light px-3 hover:scale-110 border-4 border-green cursor-pointer"

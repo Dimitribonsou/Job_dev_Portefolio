@@ -39,7 +39,7 @@ const Navbar = () => {
             <FaWhatsapp className="text-green text-2xl" />
           </a>
       <a
-            href="https://web.facebook.com/profile.php?id=100087894947502"
+            href="https://web.facebook.com/profile.php?id=61571160665639"
             rel="noopener noreferrer"
             className="flex justify-center items-center w-12 h-12 rounded-full bg-white text-light px-3 hover:scale-110 border-4 border-green cursor-pointer"
           >
