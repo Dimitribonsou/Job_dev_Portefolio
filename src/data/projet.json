@@ -28,7 +28,16 @@
     "lien":"https://depensetrack.commaxio.com"
   },
   {
-    "title": "Application de génération de carte d'étudiant"
+    "title": "Convertisseur de devise",
+    "lien":"https://convertisseur-devise-dimidev.vercel.app/"
+  },
+  {
+    "title": "Site web de location d'appartement et chambre pour un particulier  ",
+    "lien":"https://dimidev-appartement-chambre.vercel.app/"
+  },
+  {
+    "title": "Application de génération de carte Pour personnel ou etudiant",
+    "lien":"#"
   }
 ]
 
