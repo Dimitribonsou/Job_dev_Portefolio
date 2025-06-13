@@ -1,51 +1,75 @@
 [
   {
     "title": "Maquete d'une plateforme de banque d'epreuve pour etudiant",
-    "lien": "https://www.figma.com/design/lXZi5RuAOJ4E5TFjYiak6v/Projet_banque_epreuve?node-id=117-205&node-type=frame&t=7RppIWf7Er0GfcUi-0"
+    "lien": "https://www.figma.com/design/lXZi5RuAOJ4E5TFjYiak6v/Projet_banque_epreuve?node-id=117-205&node-type=frame&t=7RppIWf7Er0GfcUi-0",
+    "description": "Maquette interactive d'une plateforme permettant aux étudiants d'accéder à une banque d'épreuves et de s'entraîner.",
+    "technologies": ["Figma", "UI/UX Design", "Prototypage"]
   },
   {
     "title": "Porte-folio pour développeur",
-    "lien": "https://dimitribonsou-website.vercel.app/"
+    "lien": "https://dimitribonsou-website.vercel.app/",
+    "description": "Portfolio personnel présentant mes compétences et réalisations en tant que développeur full-stack.",
+    "technologies": ["React", "TypeScript", "SCSS", "GSAP", "Tailwind CSS"]
   },
   {
     "title": "Plateforme web de présentation des produits",
-    "lien": "https://dimishop.vercel.app"
+    "lien": "https://dimishop.vercel.app",
+    "description": "Site e-commerce moderne avec présentation des produits et système de panier.",
+    "technologies": ["AngularJs", "Bootstrap","SCSS","TypeScript"]
   },
   {
     "title": "Prototype Site web Restaurant Burger",
-    "lien": "https://www.figma.com/proto/30vtdl3FdaTMKKu1xUAgZB/Site-web-restaurant?node-id=1-2&t=PioPsmwqzxwmFOFM-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1"
+    "lien": "https://www.figma.com/proto/30vtdl3FdaTMKKu1xUAgZB/Site-web-restaurant?node-id=1-2&t=PioPsmwqzxwmFOFM-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1",
+    "description": "Prototype interactif d'un site web pour un restaurant de burgers avec menu et réservation.",
+    "technologies": ["Figma", "UI/UX Design", "Prototypage"]
   },
   {
     "title": "Réalisation du site web de DECODE",
-    "lien": "https://site-final-decode.vercel.app/"
+    "lien": "https://site-final-decode.vercel.app/",
+    "description": "Site web vitrine pour l'entreprise DECODE, présentant leurs services et réalisations.",
+    "technologies": ["React", "Tailwind CSS", "Framer Motion"]
   },
   {
     "title": "Site de présentation d'une entreprise de prestation de service",
-    "lien": "https://startup-siteweb.vercel.app/"
+    "lien": "https://startup-siteweb.vercel.app/",
+    "description": "Site web professionnel pour une startup de services, avec présentation des offres et contact.",
+    "technologies": ["React", "Bootstrap", "JavaScript", "CSS3"]
   },
   {
     "title": "Site de présentation d'une entreprise de bâtiment",
-    "lien": "https://construction-website-nu.vercel.app/"
+    "lien": "https://construction-website-nu.vercel.app/",
+    "description": "Site web pour une entreprise de construction, présentant leurs projets et services.",
+    "technologies": ["CSS3", "HTML5", "SCSS", "GSAP"]
   },
   {
     "title": "Application de gestion des finances personnelles",
-    "lien":"https://depensetrack.commaxio.com"
+    "lien": "https://depensetrack.commaxio.com",
+    "description": "Application web permettant de suivre et gérer ses dépenses personnelles.",
+    "technologies": ["PHP","CSS3","Bootstrap","HTML5","JQUERY"]
   },
   {
     "title": "Convertisseur de devise",
-    "lien":"https://convertisseur-devise-dimidev.vercel.app/"
+    "lien": "https://convertisseur-devise-dimidev.vercel.app/",
+    "description": "Application web de conversion de devises en temps réel.",
+    "technologies": ["React", "API REST", "Axios", "CSS Modules"]
   },
   {
-    "title": "Site web de location d'appartement et chambre pour un particulier  ",
-    "lien":"https://dimidev-appartement-chambre.vercel.app/"
+    "title": "Site web de location d'appartement et chambre pour un particulier",
+    "lien": "https://dimidev-appartement-chambre.vercel.app/",
+    "description": "Plateforme de mise en relation pour la location d'appartements et chambres.",
+    "technologies": ["React", "Tailwind CSS", "Material-UI"]
   },
   {
-    "title": "Site web Restaurant Burger Express  ",
-    "lien":"https://site-restaurant-burger.vercel.app/"
+    "title": "Site web Restaurant Burger Express",
+    "lien": "https://site-restaurant-burger.vercel.app/",
+    "description": "Site web pour un restaurant de burgers avec menu, réservation et commande en ligne.",
+    "technologies": ["HTML5","JavaScript", "Tailwind CSS"]
   },
   {
     "title": "Application de génération de carte Pour personnel ou etudiant",
-    "lien":"#"
+    "lien": "#",
+    "description": "Application web permettant de générer des cartes d'identité personnalisées.",
+    "technologies": ["PHP","CSS3", "HTML5"]
   }
 ]
 

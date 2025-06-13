@@ -26,18 +26,21 @@ html {
 /* Appliquer à l'élément contenant le contenu défilant */
 /* Pour Chrome, Safari et Edge */
 body::-webkit-scrollbar {
-    width: 20px; /* Largeur de la scrollbar */
+    width: 15px; /* Largeur de la scrollbar */
+    height: 500px;
 }
 
 body::-webkit-scrollbar-thumb {
-    background-image: linear-gradient(to top,$first-color,orange,purple); /* Couleur du curseur */
-    border-radius: 10px; /* Arrondir les bords du curseur */
+    background-image: linear-gradient(to top, var(--accent-primary),
+    var(--accent-secondary)); /* Couleur du curseur */
+    border-radius: 5px; /* Arrondir les bords du curseur */
 }
 
 body::-webkit-scrollbar-track {
     background:transparent; /* Couleur de la piste */
     width: 100px;
-    padding: 25px;
+    padding: 10px;
+    height: 500px;
 }
 
 
@@ -59,7 +62,7 @@ body::-webkit-scrollbar-track {
 }
 .bg-green
 {
-    background-color: $first-color;
+    background-color: var(--accent-primary);
 }
 .border-green
 {

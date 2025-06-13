@@ -1,88 +1,74 @@
-import React, { useState, useEffect } from "react";
-import profil_photo from "./../assets/home_illustration.png";
-import "./Style/annimateText.scss";
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import './Style/homeSection.scss';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const HomeSection = () => {
-  
-  const [textprofession, setTextProfession] = useState("Developpeur web & Mobile 💻");
+  const sectionRef = useRef(null);
+  const textRef = useRef(null);
+  const ctaRef = useRef(null);
 
   useEffect(() => {
-    const textLoad = () => {
-      const texts = [
-        " Developpeur web & Mobile 💻",
-        " Web designer 💻",
-        " Freelancer 🪪",
-         " Formateur 🪪"
-      ];
-      let currentIndex = 0;
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: 'top top',
+        end: 'bottom top',
+        toggleActions: 'play none none reverse',
+      },
+    });
 
-      const changeText = () => {
-        setTextProfession(texts[currentIndex]);
-        currentIndex = (currentIndex + 1) % texts.length;
-      };
-
-      const intervalId = setInterval(changeText, 5000);
-
-      return () => clearInterval(intervalId);
-    };
-
-    textLoad();
+    tl.from(textRef.current, {
+      // x: 50,
+      opacity: 1,
+      duration: 1,
+      ease: 'power4.out',
+    })
+    .from(ctaRef.current, {
+      x: 50,
+      opacity: 1,
+      duration: 1,
+      ease: 'power3.out',
+    }, '-=0.5');
   }, []);
-  
+
   return (
-     
-      <div
-        id="acceuil"
-        className="flex md:justify-between  justify-center items-center gap-7  text-black flex-wrap md:px-10 px-5 mt-10 w-screen"
-      >
-        <div  className="  w-full  md:w-1/2 sm:w-4/5    flex flex-col content-start justify-start items-center gap-5">
-          <p className="text-first text-start w-full   mx-0">
-            Salut ,bienvenue sur le site web  de Dimi
-            <strong className="text-green">Dev</strong>
-          </p>
-          <div className="flex  w-full jusfify-start items-center gap-5 text-link ">
-            <span className="prof-size">Je suis</span>
-            <span className="text-green sec-text relative prof-size">
-              {textprofession}
-            </span>
-          </div>
-          <p id="about">
-            Ayant la connaissance de plusieurs langages de programmation et
-            framework avec plusieurs projets réalisés je suis disponibles pour
-            transformer vos idées en solution numerique .
-          </p>
-          <div  className="flex  justify-center  w-full items-center gap-3 md:gap-10 mt-3 flex-wrap z-40 ">
-            <a
-              href={require("./../assets/CV_dimidev.pdf")}
-              download="cv_dimitribonsou.pdf"
-              className="btn-one"
-            >
-              Télécharger le CV
+    <section ref={sectionRef} id="home" className="home-section">
+      <div className="container">
+        <div className="content">
+          <h1 ref={textRef} className="title">
+            Je conçois des plateformes modernes et sur-mesure pour propulser votre entreprise
+          </h1>
+          {/* <p className="subtitle">
+            Développeur web & mobile full-stack basé à Douala, je transforme vos idées en solutions digitales performantes et évolutives.
+          </p> */}
+          <div ref={ctaRef} className="cta-group">
+            <a href="#contact" className="btn btn-primary">
+              Discutons de votre projet
             </a>
-            <a
-              href="https://wa.me/674606328"
-              className="btn-two"
-              rel="noreferrer"
-            >
-              Me contacter
+            <a href="#projets" className="btn btn-secondary">
+              Voir mes réalisations
             </a>
           </div>
+          <div className="stats">
+            <div className="stat-item">
+              <span className="number">3+</span>
+              <span className="label">Années d'expérience</span>
+            </div>
+            <div className="stat-item">
+              <span className="number">15+</span>
+              <span className="label">Projets réalisés</span>
+            </div>
+            <div className="stat-item">
+              <span className="number">100%</span>
+              <span className="label">Clients satisfaits</span>
+            </div>
+          </div>
         </div>
-        <div className=" w-full  md:w-1/3 sm:w-4/5    flex flex-col content-start justify-start items-center gap-5   ">
-          <img
-            src={profil_photo}
-            alt=" profil"
-            className="w-full"
-          />
-        </div>
-        {/* <div className=" w-full  md:w-1/4 sm:w-4/5 relative   flex flex-col content-start justify-start items-center gap-5 bg-green h-60 figure-1">
-          <img
-            src={profil_photo}
-            alt=" profil"
-            className="absolute top-0 left-1/3  -translate-x-1/3 -translate-y-14 w-96 h-72"
-          />
-        </div> */}
       </div>
+    </section>
   );
 };
 

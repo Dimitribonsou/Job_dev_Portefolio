@@ -1,34 +1,114 @@
-import ProjetItem from "./Sous-Components/ProjetItem";
-import projets from "../data/projet.json"; // Importation du fichier JSON
-import { porjetType } from "../types/projetType"; // Importation du type
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import projets from '../data/projet.json';
+import './Style/projetSection.scss';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const ProjetSection = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const cards = cardsRef.current;
+    
+    cards.forEach((card, index) => {
+      if (card) {
+        gsap.from(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: 'top bottom-=100',
+            toggleActions: 'play none none reverse',
+            once: true,
+          },
+          y: 50,
+          opacity: 0,
+          duration: 0.8,
+          delay: index * 0.1,
+          ease: 'power3.out',
+          onComplete: () => {
+            gsap.set(card, { clearProps: 'all' });
+          }
+        });
+      }
+    });
+  }, []);
+
   return (
-    <div   className="flex flex-col justify-center items-center gap-5 mt-10 px-10">
-      <div
-      id="projets" 
-        className="flex flex-col justify-center items-center gap-1 "
-      >
-        <p className="text-first text-green ">
-          MES <strong className="text-black">PROJETS</strong>
+    <section ref={sectionRef} id="projets" className="projet-section">
+      <div className="container">
+        <div className="section-header">
+          <h2>Mes Réalisations</h2>
+          <div className="underline"></div>
+        </div>
+
+        <p className="section-description">
+          Découvrez une sélection de mes projets récents, démontrant mon expertise
+          en développement web et mobile.
         </p>
-        <span className="w-3/5 h-1 bg-green "></span>
+
+        <div className="projects-grid">
+          {projets.map((projet, index) => (
+            <div
+              key={projet.title}
+              ref={(el:any) => cardsRef.current[index] = el}
+              className="project-card"
+            >
+              <div className="project-content">
+                <h3>{projet.title}</h3>
+                <div className="project-links">
+                  <a
+                    href={projet.lien}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-link"
+                    aria-label="Voir le projet"
+                  >
+                    <FaExternalLinkAlt />
+                    <span>Voir le projet</span>
+                  </a>
+                  {projet.lien && (
+                    <a
+                      href={projet.lien}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="project-link"
+                      aria-label="Voir le code source"
+                    >
+                      <FaGithub />
+                      <span>Code source</span>
+                    </a>
+                  )}
+                </div>
+              </div>
+              <div className="project-overlay">
+                <div className="project-details">
+                  <h4>Technologies utilisées</h4>
+                  <div className="tech-stack">
+                    {projet.technologies?.map((tech, i) => (
+                      <span key={i} className="tech-tag">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                  <p className="project-description">
+                    {projet.description}
+                  </p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="cta-container">
+          <a href="#contact" className="cta-button">
+            Discutons de votre projet
+          </a>
+        </div>
       </div>
-      <div className="title_projet">
-        <p className="text-base md:text-xl me-3">
-          Les compétences mentionner plus haut ont été mis en pratique pour
-          réaliser les projets suivants .
-          <span className="text-green">
-            Cliquer sur la description du projet pour voir le resultat du projet.
-          </span>
-        </p>
-      </div>
-      <div className="flex justify-center sm:justify-between items-center md:gap-10 lg:mt-8 mt-3 gap-3 flex-wrap w-full md:px-10 px-1">
-        {projets.map((projet: porjetType, index: number) => (
-          <ProjetItem key={index} title={projet.title} lien={projet.lien} />
-        ))}
-      </div>
-    </div>
+    </section>
   );
 };
 

@@ -1,29 +1,147 @@
-import React from "react";
-import ServicesItem from "./Sous-Components/ServicesItem";
-import services from "../data/services.json";
-import { serviceType } from "../types/serviceType";
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { FaCode, FaMobile, FaShoppingCart, FaChartLine, FaTools, FaUsers } from 'react-icons/fa';
+import './Style/serviceSection.scss';
+
+gsap.registerPlugin(ScrollTrigger);
+
+const services = [
+  {
+    icon: <FaCode />,
+    title: 'Développement Web',
+    description: 'Création de sites web et applications web modernes, responsives et performantes avec les dernières technologies.',
+    features: [
+      'Sites vitrines',
+      'Applications web complexes',
+      'E-commerce',
+      'Portails web',
+    ],
+  },
+  {
+    icon: <FaMobile />,
+    title: 'Applications Mobiles',
+    description: 'Développement d\'applications mobiles natives et cross-platform pour iOS et Android.',
+    features: [
+      'Applications natives',
+      'Applications hybrides',
+      'PWA',
+      'Maintenance et mises à jour',
+    ],
+  },
+  {
+    icon: <FaShoppingCart />,
+    title: 'E-commerce',
+    description: 'Solutions e-commerce complètes pour vendre vos produits et services en ligne.',
+    features: [
+      'Boutiques en ligne',
+      'Paiement sécurisé',
+      'Gestion des stocks',
+      'Marketing digital',
+    ],
+  },
+  {
+    icon: <FaChartLine />,
+    title: 'Optimisation SEO',
+    description: 'Amélioration de votre visibilité en ligne et de votre positionnement dans les moteurs de recherche.',
+    features: [
+      'Audit SEO',
+      'Optimisation technique',
+      'Contenu optimisé',
+      'Suivi des performances',
+    ],
+  },
+  {
+    icon: <FaTools />,
+    title: 'Maintenance & Support',
+    description: 'Services de maintenance et support technique pour assurer le bon fonctionnement de vos solutions digitales.',
+    features: [
+      'Maintenance préventive',
+      'Support technique',
+      'Mises à jour',
+      'Sauvegardes',
+    ],
+  },
+  {
+    icon: <FaUsers />,
+    title: 'Conseil & Formation',
+    description: 'Accompagnement et formation pour vous aider à maîtriser vos outils digitaux.',
+    features: [
+      'Audit technique',
+      'Formation personnalisée',
+      'Conseil stratégique',
+      'Documentation',
+    ],
+  },
+];
 
 const ServiceSection = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const cards = cardsRef.current;
+    
+    cards.forEach((card, index) => {
+      if (card) {
+        gsap.from(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: 'top bottom-=100',
+            toggleActions: 'play none none reverse',
+            once: true,
+          },
+          y: 50,
+          opacity: 0,
+          duration: 0.8,
+          delay: index * 0.1,
+          ease: 'power3.out',
+          onComplete: () => {
+            gsap.set(card, { clearProps: 'all' });
+          }
+        });
+      }
+    });
+  }, []);
+
   return (
-    <div  className="flex flex-col justify-center items-center gap-5 mt-10 px-10">
-      <div
-        className="flex flex-col justify-center items-center gap-1 "
-      >
-        <p id="services" className="text-first text-green ">
-          MES <strong className="text-black">SERVICES</strong>
+    <section ref={sectionRef} id="services" className="service-section">
+      <div className="container">
+        <div className="section-header">
+          <h2>Mes Services</h2>
+          <div className="underline"></div>
+        </div>
+
+        <p className="section-description">
+          Des solutions digitales sur mesure pour répondre à vos besoins spécifiques
+          et propulser votre entreprise vers le succès.
         </p>
-        <span className="w-3/5 h-1 bg-green "></span>
+
+        <div className="services-grid">
+          {services.map((service, index) => (
+            <div
+              key={service.title}
+              ref={(el:any) => cardsRef.current[index] = el}
+              className="service-card"
+            >
+              <div className="service-icon">
+                {service.icon}
+              </div>
+              <h3>{service.title}</h3>
+              <p className="description">{service.description}</p>
+              <ul className="features-list">
+                {service.features.map((feature, i) => (
+                  <li key={i}>{feature}</li>
+                ))}
+              </ul>
+              <a href="#contact" className="cta-button">
+                En savoir plus
+              </a>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="flex justify-center sm:justify-between items-center md:gap-10 lg:mt-8 mt-3 gap-9 flex-wrap w-full md:px-10 px-1">
-        {services.map((service: serviceType, index: number) => (
-          <ServicesItem
-            key={index}
-            title={service.title}
-            description={service.description}
-          />
-        ))}
-      </div>
-    </div>
+    </section>
   );
 };
 

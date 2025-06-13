@@ -1,70 +1,103 @@
-import useSticky from '../hooks/fixedNavbar';
-import logo_dimidev from './../assets/logo_dimidev.png'
-import { FaFacebookF, FaWhatsapp, FaPaperPlane, FaEnvelope } from "react-icons/fa"; //importer les  react-icon pour acceder aux icons
+import React, { useContext, useState, useEffect } from 'react';
+import { ThemeContext } from '../App';
+import './Style/navbar.scss';
+import logo_dimidev from '../assets/logo_dimidev.png';
+import { FaFacebookF, FaWhatsapp, FaPaperPlane, FaEnvelope, FaBars } from 'react-icons/fa';
+
 const Navbar = () => {
-  const { stickyRef, sticky } = useSticky();
+  const { theme, toggleTheme } = useContext(ThemeContext);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const navLinks = [
+    { name: 'Accueil', href: '#home' },
+    { name: 'À propos', href: '#about' },
+    { name: 'Compétences', href: '#competences' },
+    { name: 'Services', href: '#services' },
+    { name: 'Projets', href: '#projets' },
+    { name: 'Contact', href: '#contact' },
+    { name: 'Blog', href: '#blog' },
+  ];
+
   return (
-    <div     ref={stickyRef} className={`flex justify-between bg-green text-white items-center gap-3 md:px-10  px-3 py-3 shadow-md shadow-slate-50 sha min-h-24 flex-wrap mb-5 ${sticky ? 'fixed top-0 left-0 w-full text-black shadow-green-400 bg-white z-50' : ''}`}>
-      <span className="text-first font-bold bg-white py-1 rounded-lg">
-        <img src={logo_dimidev} alt='logo' className="w-20 h-14 "></img>
-      </span>
-      <nav className="order-3 md:order-2 flex justify-center items-center gap-7 flex-wrap">
-        <a href="#acceuil" className="text-link">
-          Acceuil
+    <nav className={`navbar ${isScrolled ? 'scrolled' : ''}`}>
+      <div className="container">
+        <a href="#home" className="logo-link">
+          <img src={logo_dimidev} alt="Dimidev Logo" className="logo" />
         </a>
-        <a href="#about" className="text-link">
-          Apropos
-        </a>
-        <a href="#competences" className="text-link">
-          Competences
-        </a>
-        <a href="#services" className="text-link">
-          Services
-        </a>
-        <a href="#projets" className="text-link">
-          Projets
-        </a>
-        {/* <a href="#contact" className="text-link">
-          Contact
-        </a> */}
-      </nav>
-      <div className=" md:w-fit me-3 md:order-3 flex gap-2 md:gap-5 justify-center items-center  ">
-      <a href="https://wa.me/674606328"  className="bg-white rounded-lg text-green px-4 font-medium hover:scale-105 py-3 hidden md:flex" rel="noreferrer">Me contacter</a>
-      <div className="me-3 flex justify-center items-center gap-3">
-      <a
+
+        <button 
+          className="mobile-menu-button"
+          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+        >
+          <FaBars />
+        </button>
+
+        <div className={`nav-links ${isMobileMenuOpen ? 'mobile-menu-open' : ''}`}>
+          {navLinks.map((link) => (
+            <a
+              key={link.name}
+              href={link.href}
+              className="nav-link"
+              onClick={() => setIsMobileMenuOpen(false)}
+            >
+              {link.name}
+            </a>
+          ))}
+        </div>
+        <div className="nav-contact">
+            <a href="https://wa.me/237674606328" className="btn-contact">
+                  Me Contacter
+                </a>
+        </div>
+        {/* <div className="social-links">
+          <a
             href="https://wa.me/674606328"
+            target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-center items-center w-12 h-12 rounded-full bg-white text-light px-3 hover:scale-110 border-4 border-green cursor-pointer"
+            className="social-link"
+            aria-label="WhatsApp"
           >
-            <FaWhatsapp className="text-green text-2xl" />
+            <FaWhatsapp />
           </a>
-      <a
+          <a
             href="https://web.facebook.com/profile.php?id=61571160665639"
+            target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-center items-center w-12 h-12 rounded-full bg-white text-light px-3 hover:scale-110 border-4 border-green cursor-pointer"
+            className="social-link"
+            aria-label="Facebook"
           >
-            <FaFacebookF className="text-green text-2xl" />
+            <FaFacebookF />
           </a>
-      
           <a
             href="https://t.me/dimidev237"
+            target="_blank"
             rel="noopener noreferrer"
-            className="flex justify-center items-center w-12 h-12 rounded-full bg-white text-light px-3 hover:scale-110 border-4 border-green cursor-pointer"
+            className="social-link"
+            aria-label="Telegram"
           >
-            <FaPaperPlane className="text-green text-2xl" />
+            <FaPaperPlane />
           </a>
           <a
             href="mailto:dimitribonsou26@gmail.com"
-            rel="noopener noreferrer"
-            className="flex justify-center items-center w-12 h-12 rounded-full bg-white text-light px-3 hover:scale-110 border-4 border-green cursor-pointer"
+            className="social-link"
+            aria-label="Email"
           >
-            <FaEnvelope className="text-green text-2xl" />
+            <FaEnvelope />
           </a>
-        
+        </div> */}
       </div>
-      </div>
-    
-    </div>
+    </nav>
   );
 };
+
 export default Navbar;

@@ -1,98 +1,163 @@
-import React from "react";
-import CompetenceItem from "./Sous-Components/CompetenceItem";
-import BlockImageCompetence from "./Sous-Components/BlockImageCompetence";
-import logo_angular from "./../assets/angular.png";
-import logo_react from "./../assets/react.png";
-import logo_php from "./../assets/php.png";
-import logo_Csharp from "./../assets/csharp.png";
-import logo_nodejs from "./../assets/nodejs.png";
-import logo_mysql from "./../assets/mysql.png";
-import logo_mongodb from "./../assets/mongodb.png";
-import logo_ts from "./../assets/ts.jpeg";
-import logo_html from "./../assets/html.png";
-import logo_css from "./../assets/css.png";
-import logo_js from "./../assets/js.png";
-import logo_bootstrap from "./../assets/Bootstrap.png";
-import logo_sass from "./../assets/sass.png";
-import logo_figma from "./../assets/figma.png";
-import logo_tailwind from "./../assets/tailwind.png";
-import logo_uml from "./../assets/uml.jpeg";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
-const CompetenceSection = () => {
-  return (
-    <div
-    
-      className="mt-3 flex flex-col justify-center items-center gap-10 lg:px-10 px-5"
-    >
-      <div  className="flex flex-col justify-center items-center gap-1 ">
-        <p className="text-first text-green ">
-          MES <strong className="text-black">COMPETENCES</strong>
-        </p>
-        <span className="w-3/5 h-1 bg-green "></span>
-      </div>
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { FaCode, FaDatabase, FaMobile, FaServer, FaTools, FaPalette } from 'react-icons/fa';
+import './Style/competenceSection.scss';
 
-      <p className="text-justify">
-        Pour mettre sur pied mes differents projets je fais usage a plusieurs
-        langages de progammation , framework ,outils et technologies en fonction
-        de l'etape de développement et de la grandeur du projet .
-      </p>
-      <div  className=" flex xl:justify-center justify-center items-center lg:gap-14 gap-10  flex-wrap md:px-10 px-5  w-screen h-fit md:mb-20 mb-24">
-        <div  className=" order-2 flex flex-wrap  gap-4 md:w-full  xl:w-2/3 w-11/12    justify-center     items-center  h-fit   ">
-          <CompetenceItem groupetitle="Analyse" technologies="UML,MERISE" />
-          <CompetenceItem
-            groupetitle="WEB DESIGN"
-            technologies="FIGMA,ADOBE XD"
-          />
-          <CompetenceItem
-            groupetitle="FRONT-END"
-            technologies="HTML5, CSS3,SCSS,JS"
-          />
-          {/* <div className="mt-2 sm:w-2/3 w-10/12   mx-auto xl:mx-0 ">
-            <span className="text-green font-bold">Framework</span>
-            <div className="text-link mt-2 ms-10 md:text-center">
-              React,React-native,Angular,Bootstrap,Tailwind CSS, Typescript
-            </div>
-          </div> */}
-          <CompetenceItem groupetitle="BACK-END" technologies="PHP,C#,NODEJS" />
-          <CompetenceItem
-            groupetitle="BASE DE DONNEE"
-            technologies="MYSQL,MONGODB"
-          />
-            <div className="flex flex-col justify-start items-center gap-2 w-96 h-50  px-5 py-5 rounded-lg text-black bg-green-100 hover:scale-105">
-                <FontAwesomeIcon icon={faCoffee} className="text-green text-3xl" />
-                <span className="text-base font-bold text-green text-center"> Framework  </span>
-                <span className="text-center font-bold "> React , React-native , Angular , Bootstrap , Tailwind CSS , Typescript</span> 
-            </div>
+gsap.registerPlugin(ScrollTrigger);
+
+interface Technology {
+  name: string;
+  level: number;
+}
+
+interface Skill {
+  category: string;
+  icon: JSX.Element;
+  technologies: Technology[];
+}
+
+const skills: Skill[] = [
+  {
+    category: 'Frontend',
+    icon: <FaCode />,
+    technologies: [
+      { name: 'React', level: 90 },
+      { name: 'Angular', level: 85 },
+      { name: 'TypeScript', level: 88 },
+      { name: 'HTML5/CSS3', level: 95 },
+      { name: 'Tailwind CSS', level: 92 },
+      { name: 'SASS/SCSS', level: 90 },
+    ],
+  },
+  {
+    category: 'Backend',
+    icon: <FaServer />,
+    technologies: [
+      { name: 'Node.js', level: 85 },
+      { name: 'PHP', level: 80 },
+      { name: 'C#', level: 75 },
+      { name: 'Express.js', level: 88 },
+      { name: 'REST APIs', level: 90 },
+      { name: 'GraphQL', level: 75 },
+    ],
+  },
+  {
+    category: 'Base de données',
+    icon: <FaDatabase />,
+    technologies: [
+      { name: 'MySQL', level: 85 },
+      { name: 'MongoDB', level: 80 },
+      { name: 'PostgreSQL', level: 75 },
+      { name: 'Redis', level: 70 },
+    ],
+  },
+  {
+    category: 'Mobile',
+    icon: <FaMobile />,
+    technologies: [
+      { name: 'React Native', level: 85 },
+      { name: 'Flutter', level: 70 },
+      { name: 'Responsive Design', level: 90 },
+    ],
+  },
+  {
+    category: 'Design',
+    icon: <FaPalette />,
+    technologies: [
+      { name: 'Figma', level: 85 },
+      { name: 'Adobe XD', level: 80 },
+      { name: 'UI/UX Design', level: 85 },
+    ],
+  },
+  {
+    category: 'Outils & Méthodologies',
+    icon: <FaTools />,
+    technologies: [
+      { name: 'Git/GitHub', level: 90 },
+      { name: 'Docker', level: 75 },
+      { name: 'Agile/Scrum', level: 85 },
+      { name: 'UML/MERISE', level: 80 },
+    ],
+  },
+];
+
+const CompetenceSection = () => {
+  const sectionRef = useRef<HTMLElement>(null);
+  const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+
+  useEffect(() => {
+    const cards = cardsRef.current;
+    
+    cards.forEach((card, index) => {
+      if (card) {
+        gsap.from(card, {
+          scrollTrigger: {
+            trigger: card,
+            start: 'top bottom-=100',
+            toggleActions: 'play none none reverse',
+            once: true,
+          },
+          y: 50,
+          opacity: 0,
+          duration: 0.8,
+          delay: index * 0.1,
+          ease: 'power3.out',
+          onComplete: () => {
+            gsap.set(card, { clearProps: 'all' });
+          }
+        });
+      }
+    });
+  }, []);
+
+  return (
+    <section ref={sectionRef} id="competences" className="competence-section">
+      <div className="container">
+        <div className="section-header">
+          <h2>Mes Compétences</h2>
+          <div className="underline"></div>
         </div>
-        <div  className=" order-1  border-x-4 border-y-4 border-green xl:w-1/4   sm:w-4/5 w-11/12 min-w-80 h-80 flex flex-col justify-start items-center gap-4 relative md:mt-0 mt-10 rounded-full py-9">
-          <BlockImageCompetence
-            image1={logo_angular}
-            image2={logo_react}
-            image3={logo_php}
-            image4={logo_Csharp}
-          />
-          <BlockImageCompetence
-            image1={logo_nodejs}
-            image2={logo_mongodb}
-            image3={logo_mysql}
-            image4={logo_ts}
-          />
-          <BlockImageCompetence
-            image1={logo_html}
-            image2={logo_css}
-            image3={logo_js}
-            image4={logo_bootstrap}
-          />
-          <BlockImageCompetence
-            image1={logo_sass}
-            image2={logo_figma}
-            image3={logo_tailwind}
-            image4={logo_uml}
-          />
+
+        <p className="section-description">
+          Expert en développement web et mobile, je maîtrise un large éventail de technologies
+          pour créer des solutions digitales performantes et évolutives.
+        </p>
+
+        <div className="skills-grid">
+          {skills.map((skill, index) => (
+            <div
+              key={skill.category}
+              ref={(el) => {
+                cardsRef.current[index] = el;
+              }}
+              className="skill-card"
+            >
+              <div className="skill-header">
+                <div className="icon">{skill.icon}</div>
+                <h3>{skill.category}</h3>
+              </div>
+              <div className="skill-content">
+                {skill.technologies.map((tech) => (
+                  <div key={tech.name} className="skill-item">
+                    <div className="skill-info">
+                      <span className="skill-name">{tech.name}</span>
+                      <span className="skill-level">{tech.level}%</span>
+                    </div>
+                    <div className="skill-bar">
+                      <div
+                        className="skill-progress"
+                        style={{ width: `${tech.level}%` }}
+                      />
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

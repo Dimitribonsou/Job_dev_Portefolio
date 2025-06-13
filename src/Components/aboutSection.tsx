@@ -1,141 +1,164 @@
-import React from "react";
-import profil_photo from "./../assets/photo_flyers.png";
-import photo_dimi from "./../assets/photo_acceuil.png"
-import chapeau from "./../assets/chapeau.png";
-import { FaFacebookF, FaWhatsapp, FaPaperPlane, FaEnvelope } from "react-icons/fa"; //importer les  react-icon pour acceder aux icons
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { FaFacebookF, FaWhatsapp, FaPaperPlane, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+import photo_dimi from '../assets/photo_acceuil.png';
+import './Style/aboutSection.scss';
+
+gsap.registerPlugin(ScrollTrigger);
 
 const AboutSection = () => {
+  const sectionRef = useRef(null);
+  const contentRef = useRef(null);
+  const imageRef = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: sectionRef.current,
+        start: 'top center',
+        end: 'bottom center',
+        toggleActions: 'play none none reverse',
+      },
+    });
+
+    tl.from(contentRef.current, {
+      x: -100,
+      opacity: 0,
+      duration: 1,
+      ease: 'power4.out',
+    })
+    .from(imageRef.current, {
+      x: 100,
+      opacity: 0,
+      duration: 1,
+      ease: 'power4.out',
+    }, '-=0.5');
+  }, []);
+
   return (
-    <div
-      className=" flex xl:justify-between justify-center items-center gap-5 flex-wrap md:px-10 px-5 mt-20 w-screen min-h-fit h-3/4 md:mb-20 mb-24"
-    >
-      <div className=" order-1 md:order-2 flex flex-col gap-4 md:w-4/5  xl:w-2/3 w-11/12 justify-start items-center md:h-80 h-fit   ">
-        <div className="flex flex-col justify-center items-center gap-1">
-          <p className="text-first text-green">
-            APROPOS DE <strong className="text-black">MOI</strong>
-          </p>
-          <span className="w-3/5 h-1 bg-green "></span>
+    <section ref={sectionRef} id="about" className="about-section">
+      <div className="container">
+        <div className="content" ref={contentRef}>
+          <div className="section-header">
+            <h2>À propos de moi</h2>
+            <div className="underline"></div>
+          </div>
+
+          <div className="about-content">
+            <p className="lead">
+              Développeur web & mobile passionné, je transforme vos idées en solutions digitales performantes et évolutives.
+            </p>
+            
+            <p className="description">
+              Avec plus de 3 ans d'expérience dans le développement web et mobile, je m'engage à créer des solutions sur mesure qui répondent parfaitement aux besoins de vos utilisateurs. Mon expertise en JavaScript et C# me permet de concevoir des applications robustes, évolutives et maintenables.
+            </p>
+
+            <div className="expertise">
+              <h3>Mon expertise</h3>
+              <ul>
+                <li>Développement d'applications web modernes et responsives</li>
+                <li>Création d'applications mobiles performantes</li>
+                <li>Conception d'architectures évolutives</li>
+                <li>Optimisation des performances et de l'expérience utilisateur</li>
+              </ul>
+            </div>
+
+            <div className="contact-info">
+              <div className="info-grid">
+                <div className="info-item">
+                  <span className="label">Email</span>
+                  <a href="mailto:dimitribonsou26@gmail.com" className="value">
+                    dimitribonsou26@gmail.com
+                  </a>
+                </div>
+                <div className="info-item">
+                  <span className="label">Téléphone</span>
+                  <a href="tel:+237674606328" className="value">
+                    +237 674 606 328
+                  </a>
+                </div>
+                <div className="info-item">
+                  <span className="label">Localisation</span>
+                  <span className="value">Douala, Cameroun</span>
+                </div>
+                <div className="info-item">
+                  <span className="label">Disponibilité</span>
+                  <span className="value">Immédiate</span>
+                </div>
+              </div>
+            </div>
+
+            <div className="social-links">
+              <a
+                href="https://github.com/Dimitribonsou"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+                aria-label="GitHub"
+              >
+                <FaGithub />
+              </a>
+              <a
+                href="https://web.facebook.com/profile.php?id=61571160665639"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+                aria-label="Facebook"
+              >
+                <FaFacebookF />
+              </a>
+              <a
+                href="https://wa.me/674606328"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="social-link"
+                aria-label="WhatsApp"
+              >
+                <FaWhatsapp />
+              </a>
+              <a
+                href="mailto:dimitribonsou26@gmail.com"
+                className="social-link"
+                aria-label="Email"
+              >
+                <FaEnvelope />
+              </a>
+            </div>
+
+            <div className="cta-group">
+              <a
+                href={require('../assets/CV_dimidev.pdf')}
+                download="cv_dimitribonsou.pdf"
+                className="btn btn-primary"
+              >
+                Télécharger mon CV
+              </a>
+              <a
+                href="#contact"
+                className="btn btn-secondary"
+              >
+                Discutons de votre projet
+              </a>
+            </div>
+          </div>
         </div>
-        <p className="text-justify">
-          Je suis développeur pour moi codé est une passion j’adore découvrir le
-          monde du génie logiciel c’est pourquoi je me lance des défis
-          quotidiens dans la découverte des nouveautés sur les technologies
-          basée sur les langages
-          <strong className="text-green text-base  font-bold">  Javascript et C# .</strong>
-        </p>
-        <div className="flex w-full justify-between items-center flex-wrap ">
-          <div className="flex flex-col gap-1 justify-center items-center  md:w-1/5 w-1/2  mb-1">
-            <span className="text-link ">Nom</span>
-            <span>BONSOU KENGNI </span>
+
+        <div className="image-container" ref={imageRef}>
+          <div className="image-wrapper">
+            <img
+              src={photo_dimi}
+              alt="Dimitri Bonsou - Développeur Web & Mobile"
+              className="profile-image"
+            />
+            <div className="experience-badge">
+              <span className="years">3+</span>
+              <span className="text">Années d'expérience</span>
+            </div>
           </div>
-          <div className="flex flex-col gap-1 md:justify-center justify-end items-center md:w-1/5 w-1/2 mb-1">
-            <span className="text-link">PRENOM</span>
-            <span> DIMITRI</span>
-          </div>
-          <div className="flex flex-col gap-1 justify-center items-center md:w-1/5 w-1/2 mb-1">
-            <span className="text-link">EMAIL</span>
-            <a
-              href="mailto:dimitribonsou26@gmail.com"
-              className="font-bold"
-              rel="noreferrer"
-            >
-              dimitribonsou26@gm..
-            </a>
-          </div>
-          <div className="flex flex-col gap-1 md:justify-center justify-end items-center md:w-1/5 w-1/2 mb-1">
-            <span className="text-link">TELEPHONE</span>
-            <span>674606328</span>
-          </div>
-        </div>
-        <div id="competences" className="flex w-full justify-between items-center flex-wrap ">
-          <div className="flex flex-col gap-1 justify-center items-center md:w-1/5 w-1/2 mb-1">
-            <span className="text-link">GITHUB</span>
-            <a
-              href="https://github.com/Dimitribonsou"
-              target="_blank"
-              className="text-green font-bold"
-              rel="noreferrer"
-            >
-              Dimitribonsou
-            </a>
-          </div>
-          <div className="flex flex-col gap-1 md:justify-center justify-end items-center md:w-1/5 w-1/2 mb-1">
-            <span className="text-link">POST PREFERE</span>
-            <span className="font-bold text-green">DEV-BACK-END</span>
-          </div>
-          <div className="flex flex-col gap-1 justify-center items-center md:w-1/5 w-1/2 mb-1">
-            <span className="text-link">PAYS</span>
-            <span>Cameroun</span>
-          </div>
-          <div className="flex flex-col gap-1 md:justify-center justify-end items-center md:w-1/5 w-1/2 mb-1">
-            <span className="text-link">VILLE</span>
-            <span>Douala</span>
-          </div>
-        </div>
-        <div    className=" w-full flex   justify-center items-center gap-5 md:gap-10 flex-wrap">
-          <a
-            href={require("./../assets/CV_dimidev.pdf")}
-            download="cv_dimitribonsou.pdf"
-            className="btn-one"
-          >
-            Télécharger le CV
-          </a>
-          <a
-            href="https://wa.me/674606328"
-            className="btn-two"
-            rel="noreferrer"
-          >
-            Me contacter
-          </a>
-        </div>
-      </div>
-      <div className=" order-2 bg-green-50  md:order-1 border-x-4 border-y-4 border-green xl:w-1/4   sm:w-4/5 w-11/12 min-w-80 h-80 flex justify-start items-center gap-5 relative md:mt-0 mt-10">
-        <div className="flex  w-1/6   h-full flex-col justify-start  items-start gap-5 py-5 px-2 z-30">
-          <a
-            href="https://web.facebook.com/profile.php?id=61571160665639"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex justify-center items-center w-14 h-14 rounded-full bg-green text-light px-3 hover:scale-110 border-4 border-green cursor-pointer"
-          >
-            <FaFacebookF className="text-white text-2xl" />
-          </a>
-          <a
-            href="https://wa.me/674606328"
-            target="_blank"
-            rel="noopener noreferrer"
-            about="naviagtion vers whatsapp"
-            className="flex justify-center items-center w-14 h-14 rounded-full bg-green text-light px-3 hover:scale-110 border-4 border-green cursor-pointer"
-          >
-            <FaWhatsapp className="text-white text-2xl"  />
-          </a>
-          <a
-            href="https://t.me/dimidev237"
-            target="_blank"
-            about="naviagtion vers telegramme"
-            rel="noopener noreferrer"
-            className="flex justify-center items-center w-14 h-14 rounded-full bg-green text-light px-3 hover:scale-110 border-4 border-green cursor-pointer"
-          >
-            <FaPaperPlane className="text-white text-2xl" />
-          </a>
-          <a
-            href="mailto:dimitribonsou26@gmail.com"
-            rel="noopener noreferrer"
-            about="naviagtion vers email"
-            className="flex justify-center items-center w-14 h-14 rounded-full bg-green text-light px-3 hover:scale-110 border-4 border-green cursor-pointer"
-          >
-            <FaEnvelope className="text-white text-2xl" />
-          </a>
-        </div>
-        <img
-          src={photo_dimi}
-          alt="about profil"
-          className="absolute top-0 left-1/3 md:left-1/2 -translate-x-1/3 md:-translate-x-1/2 -translate-y-28 ms-5 md:ms-0 w-80 scale-110    md:scale-150   z-20"
-        />
-        <div className="  flex justify-center items-center w-20 h-20 rounded-full bg-green absolute top-0 left-full -translate-x-2/3 -translate-y-10">
-          <img src={chapeau} alt="chapeau laureat" className="w-4/5 " />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 
