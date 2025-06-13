@@ -103,7 +103,7 @@ const ProjetSection = () => {
         </div>
 
         <div className="cta-container">
-          <a href="#contact" className="cta-button">
+          <a href="https://wa.me/237674606328?text=Je souhaite discuter sur mon projet avec vous .Et-vous disponible?" className="cta-button">
             Discutons de votre projet
           </a>
         </div>

@@ -10,6 +10,7 @@ const services = [
   {
     icon: <FaCode />,
     title: 'Développement Web',
+    message:"Je souhaite en savoir plus sur votre service de Développement Web ",
     description: 'Création de sites web et applications web modernes, responsives et performantes avec les dernières technologies.',
     features: [
       'Sites vitrines',
@@ -21,6 +22,7 @@ const services = [
   {
     icon: <FaMobile />,
     title: 'Applications Mobiles',
+     message:"Je souhaite en savoir plus sur votre service Applications Mobiles ",
     description: 'Développement d\'applications mobiles natives et cross-platform pour iOS et Android.',
     features: [
       'Applications natives',
@@ -32,6 +34,7 @@ const services = [
   {
     icon: <FaShoppingCart />,
     title: 'E-commerce',
+    message:"Je souhaite en savoir plus sur votre service E-commerce " ,
     description: 'Solutions e-commerce complètes pour vendre vos produits et services en ligne.',
     features: [
       'Boutiques en ligne',
@@ -43,6 +46,7 @@ const services = [
   {
     icon: <FaChartLine />,
     title: 'Optimisation SEO',
+     message:"Je souhaite en savoir plus sur votre service d'Optimisation SEO ",
     description: 'Amélioration de votre visibilité en ligne et de votre positionnement dans les moteurs de recherche.',
     features: [
       'Audit SEO',
@@ -54,6 +58,7 @@ const services = [
   {
     icon: <FaTools />,
     title: 'Maintenance & Support',
+     message:"Je souhaite en savoir plus sur votre service de Maintenance & Support ",
     description: 'Services de maintenance et support technique pour assurer le bon fonctionnement de vos solutions digitales.',
     features: [
       'Maintenance préventive',
@@ -65,6 +70,7 @@ const services = [
   {
     icon: <FaUsers />,
     title: 'Conseil & Formation',
+     message:"Je souhaite en savoir plus sur votre service de Conseil & Formation ",
     description: 'Accompagnement et formation pour vous aider à maîtriser vos outils digitaux.',
     features: [
       'Audit technique',
@@ -134,7 +140,7 @@ const ServiceSection = () => {
                   <li key={i}>{feature}</li>
                 ))}
               </ul>
-              <a href="#contact" className="cta-button">
+              <a href={`https://wa.me/237674606328?text=${service.message}`} className="cta-button">
                 En savoir plus
               </a>
             </div>

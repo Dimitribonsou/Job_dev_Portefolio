@@ -36,6 +36,7 @@ const skills: Skill[] = [
     technologies: [
       { name: 'Node.js', level: 85 },
       { name: 'PHP', level: 80 },
+      { name: 'Laravel', level: 75 },
       { name: 'C#', level: 75 },
       { name: 'Express.js', level: 88 },
       { name: 'REST APIs', level: 90 },

@@ -2,7 +2,8 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaFacebookF, FaWhatsapp, FaPaperPlane, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
-import photo_dimi from '../assets/photo_acceuil.png';
+// import photo_dimi from '../assets/photo_acceuil.png';
+import photo_dimi from '../assets/profil_dimidev_new.png';
 import './Style/aboutSection.scss';
 
 gsap.registerPlugin(ScrollTrigger);
@@ -16,28 +17,39 @@ const AboutSection = () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: sectionRef.current,
-        start: 'top center',
+        start: 'top 80%',
         end: 'bottom center',
         toggleActions: 'play none none reverse',
       },
     });
-
-    tl.from(contentRef.current, {
-      x: -100,
-      opacity: 0,
-      duration: 1,
-      ease: 'power4.out',
-    })
-    .from(imageRef.current, {
+    gsap.from(contentRef.current, {
+      scrollTrigger: {
+          trigger: sectionRef.current,
+          toggleActions: "restart reverse",
+          start: "top 30%",
+      },
+      y:-100,
+      opacity:1,
+      // eas:"elastic.out(0.4,0.15)",
+      duration:2,
+      stagger:0.5 
+   })
+    // tl.from(contentRef.current, {
+    //   duration: 1,
+    //   y: 20,
+    //   opacity: 0.5,
+    //   ease: 'power1.out',
+    // })
+    tl.from(imageRef.current, {
       x: 100,
-      opacity: 0,
+      opacity: 1,
       duration: 1,
       ease: 'power4.out',
     }, '-=0.5');
   }, []);
 
   return (
-    <section ref={sectionRef} id="about" className="about-section">
+    <section ref={sectionRef} id="about" className=" about-section">
       <div className="container">
         <div className="content" ref={contentRef}>
           <div className="section-header">
@@ -54,7 +66,7 @@ const AboutSection = () => {
               Avec plus de 3 ans d'expérience dans le développement web et mobile, je m'engage à créer des solutions sur mesure qui répondent parfaitement aux besoins de vos utilisateurs. Mon expertise en JavaScript et C# me permet de concevoir des applications robustes, évolutives et maintenables.
             </p>
 
-            <div className="expertise">
+            <div className="expertise" id='contact'>
               <h3>Mon expertise</h3>
               <ul>
                 <li>Développement d'applications web modernes et responsives</li>
@@ -64,7 +76,7 @@ const AboutSection = () => {
               </ul>
             </div>
 
-            <div className="contact-info">
+            <div className="contact-info" >
               <div className="info-grid">
                 <div className="info-item">
                   <span className="label">Email</span>
@@ -126,7 +138,7 @@ const AboutSection = () => {
               </a>
             </div>
 
-            <div className="cta-group">
+            <div className="flex gap-2 cta-group">
               <a
                 href={require('../assets/CV_dimidev.pdf')}
                 download="cv_dimitribonsou.pdf"
@@ -152,7 +164,7 @@ const AboutSection = () => {
               className="profile-image"
             />
             <div className="experience-badge">
-              <span className="years">3+</span>
+              <span className="years">4+</span>
               <span className="text">Années d'expérience</span>
             </div>
           </div>

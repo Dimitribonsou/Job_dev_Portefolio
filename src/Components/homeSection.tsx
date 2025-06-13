@@ -27,7 +27,7 @@ const HomeSection = () => {
       ease: 'power4.out',
     })
     .from(ctaRef.current, {
-      x: 50,
+      y: 25,
       opacity: 1,
       duration: 1,
       ease: 'power3.out',
@@ -45,7 +45,7 @@ const HomeSection = () => {
             Développeur web & mobile full-stack basé à Douala, je transforme vos idées en solutions digitales performantes et évolutives.
           </p> */}
           <div ref={ctaRef} className="cta-group">
-            <a href="#contact" className="btn btn-primary">
+            <a href="https://wa.me/237674606328?text=Je souhaite discuter sur mon projet avec vous .Et-vous disponible?" className="btn btn-primary">
               Discutons de votre projet
             </a>
             <a href="#projets" className="btn btn-secondary">
@@ -54,11 +54,11 @@ const HomeSection = () => {
           </div>
           <div className="stats">
             <div className="stat-item">
-              <span className="number">3+</span>
+              <span className="number">4+</span>
               <span className="label">Années d'expérience</span>
             </div>
             <div className="stat-item">
-              <span className="number">15+</span>
+              <span className="number">20+</span>
               <span className="label">Projets réalisés</span>
             </div>
             <div className="stat-item">

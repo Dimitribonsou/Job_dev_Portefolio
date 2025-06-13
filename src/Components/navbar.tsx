@@ -57,7 +57,7 @@ const Navbar = () => {
         <div className="nav-contact">
             <a href="https://wa.me/237674606328" className="btn-contact">
                   Me Contacter
-                </a>
+            </a>
         </div>
         {/* <div className="social-links">
           <a
