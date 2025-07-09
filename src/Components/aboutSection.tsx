@@ -139,13 +139,13 @@ const AboutSection = () => {
             </div>
 
             <div className="flex gap-2 cta-group">
-              <a
+              {/* <a
                 href={require('../assets/CV_dimidev.pdf')}
                 download="cv_dimitribonsou.pdf"
                 className="btn btn-primary"
               >
                 Télécharger mon CV
-              </a>
+              </a> */}
               <a
                 href="#contact"
                 className="btn btn-secondary"
