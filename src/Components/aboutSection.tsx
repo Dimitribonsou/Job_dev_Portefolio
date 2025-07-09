@@ -63,7 +63,7 @@ const AboutSection = () => {
             </p>
             
             <p className="description">
-              Avec plus de 3 ans d'expérience dans le développement web et mobile, je m'engage à créer des solutions sur mesure qui répondent parfaitement aux besoins de vos utilisateurs. Mon expertise en JavaScript et C# me permet de concevoir des applications robustes, évolutives et maintenables.
+              Avec plus de 4 ans d'expérience dans le développement web et mobile, je m'engage à créer des solutions sur mesure qui répondent parfaitement aux besoins de vos utilisateurs. Mon expertise en JavaScript et C# me permet de concevoir des applications robustes, évolutives et maintenables.
             </p>
 
             <div className="expertise" id='contact'>
