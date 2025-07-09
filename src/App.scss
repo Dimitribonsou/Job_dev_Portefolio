@@ -90,7 +90,7 @@ section {
   
   &-primary {
     background-color: var(--accent-primary);
-    color: white;
+    color:#000;
     
     &:hover {
       background-color: var(--accent-primary-dark);
@@ -105,7 +105,7 @@ section {
     
     &:hover {
       background-color: var(--accent-primary);
-      color: white;
+      color:#000;
     }
   }
 }

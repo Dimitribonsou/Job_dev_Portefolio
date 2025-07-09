@@ -45,7 +45,7 @@ const HomeSection = () => {
             Développeur web & mobile full-stack basé à Douala, je transforme vos idées en solutions digitales performantes et évolutives.
           </p> */}
           <div ref={ctaRef} className="cta-group">
-            <a href="https://wa.me/237674606328?text=Je souhaite discuter sur mon projet avec vous .Et-vous disponible?" className="btn btn-primary">
+            <a href="https://wa.me/237674606328?text=Je souhaite discuter sur mon projet avec vous .Et-vous disponible?" className="btn btn-primary text-black">
               Discutons de votre projet
             </a>
             <a href="#projets" className="btn btn-secondary">
