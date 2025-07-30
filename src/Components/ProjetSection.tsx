@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { FaGithub, FaExternalLinkAlt, FaInfoCircle } from 'react-icons/fa';
 import projets from '../data/projet.json';
 import './Style/projetSection.scss';
 
@@ -75,15 +75,22 @@ const ProjetSection = () => {
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
-                      aria-label="Voir le code source"
+                      aria-label="Details"
+                      onClick={(e) => {
+                        e.preventDefault();
+                        const overlay = document.querySelector('.project-overlay');
+                        if (overlay) {
+                          (overlay as HTMLElement).style.display = (overlay as HTMLElement).style.display === 'block' ? 'none' : 'block';
+                        }
+                      }}
                     >
-                      <FaGithub />
-                      <span>Code source</span>
+                      <FaInfoCircle />
+                      <span>Details</span>
                     </a>
                   )}
                 </div>
               </div>
-              <div className="project-overlay">
+              <div className="project-overlay" style={{display: 'none'}}>
                 <div className="project-details">
                   <h4>Technologies utilisées</h4>
                   <div className="tech-stack">
