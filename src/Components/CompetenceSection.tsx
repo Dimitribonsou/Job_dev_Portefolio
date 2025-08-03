@@ -47,7 +47,7 @@ const skills: Skill[] = [
     category: 'Base de données',
     icon: <FaDatabase />,
     technologies: [
-      { name: 'MySQL', level: 85 },
+      { name: 'MySQL', level: 95 },
       { name: 'MongoDB', level: 80 },
       { name: 'PostgreSQL', level: 75 },
       { name: 'Redis', level: 70 },
@@ -76,9 +76,9 @@ const skills: Skill[] = [
     icon: <FaTools />,
     technologies: [
       { name: 'Git/GitHub', level: 90 },
-      { name: 'Docker', level: 75 },
+      { name: 'Docker', level: 70 },
       { name: 'Agile/Scrum', level: 85 },
-      { name: 'UML/MERISE', level: 80 },
+      { name: 'UML/MERISE', level: 85 },
     ],
   },
 ];

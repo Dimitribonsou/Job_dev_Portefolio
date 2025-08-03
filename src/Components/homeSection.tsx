@@ -39,7 +39,7 @@ const HomeSection = () => {
       <div className="container">
         <div className="content">
           <h1 ref={textRef} className="title">
-            Je conçois des plateformes modernes et sur-mesure pour propulser votre entreprise
+            Je conçois des plateformes modernes et des stratégies sur-mesure pour propulser votre entreprise
           </h1>
           {/* <p className="subtitle">
             Développeur web & mobile full-stack basé à Douala, je transforme vos idées en solutions digitales performantes et évolutives.

@@ -90,7 +90,7 @@ const ProjetSection = () => {
                   )}
                 </div>
               </div>
-              <div className="project-overlay" style={{display: 'none'}}>
+              <div className="project-overlay">
                 <div className="project-details">
                   <h4>Technologies utilisées</h4>
                   <div className="tech-stack">
