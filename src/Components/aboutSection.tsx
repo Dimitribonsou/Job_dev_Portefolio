@@ -3,7 +3,8 @@ import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaFacebookF, FaWhatsapp, FaPaperPlane, FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
 // import photo_dimi from '../assets/photo_acceuil.png';
-import photo_dimi from '../assets/profil_dimidev_new.png';
+// import photo_dimi from '../assets/profil_dimidev_new.png';
+import photo_dimi from '../assets/new_profil.png';
 import './Style/aboutSection.scss';
 
 gsap.registerPlugin(ScrollTrigger);
