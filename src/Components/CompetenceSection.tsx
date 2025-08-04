@@ -50,7 +50,7 @@ const skills: Skill[] = [
       { name: 'MySQL', level: 95 },
       { name: 'MongoDB', level: 80 },
       { name: 'PostgreSQL', level: 75 },
-      { name: 'Redis', level: 70 },
+      // { name: 'Redis', level: 70 },
     ],
   },
   {
@@ -58,7 +58,7 @@ const skills: Skill[] = [
     icon: <FaMobile />,
     technologies: [
       { name: 'React Native', level: 85 },
-      { name: 'Flutter', level: 70 },
+      // { name: 'Flutter', level: 70 },
       { name: 'Responsive Design', level: 90 },
     ],
   },
@@ -76,7 +76,7 @@ const skills: Skill[] = [
     icon: <FaTools />,
     technologies: [
       { name: 'Git/GitHub', level: 90 },
-      { name: 'Docker', level: 70 },
+      // { name: 'Docker', level: 70 },
       { name: 'Agile/Scrum', level: 85 },
       { name: 'UML/MERISE', level: 85 },
     ],

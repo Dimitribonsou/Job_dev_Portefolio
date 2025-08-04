@@ -6,6 +6,18 @@
     "technologies": ["Figma", "UI/UX Design", "Prototypage"]
   },
   {
+    "title": "Maquete du site web de Global Visa",
+    "lien": "https://www.figma.com/proto/9bho2bdP0FrgipVW8Y2IrJ/Site-Global-Visa?t=V6jrzQuU0zmdwzyL-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=6-8&starting-point-node-id=6%3A8",
+    "description": "Maquette interactive d'un site web pour Global Visa, facilitant la navigation et la demande de visas.",
+    "technologies": ["Figma", "UI/UX Design", "Prototypage"]
+  },
+  {
+    "title": "Maquete interactif du site web de Global Visa",
+    "lien": "https://www.figma.com/proto/57GQxSMC9RY7FNMgW0yzvc/Site-Sun-vin-technology?t=V6jrzQuU0zmdwzyL-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=11-19&starting-point-node-id=11%3A19",
+    "description": "Maquette interactive d'un site web pour Sun Vin Technology, mettant en avant leurs services et produits.",
+    "technologies": ["Figma", "UI/UX Design", "Prototypage"]
+  },
+  {
     "title": "Porte-folio pour développeur",
     "lien": "https://dimitribonsou-website.vercel.app/",
     "description": "Portfolio personnel présentant mes compétences et réalisations en tant que développeur full-stack.",
