@@ -27,6 +27,7 @@ const skills: Skill[] = [
       { name: 'TypeScript', level: 88 },
       { name: 'HTML5/CSS3', level: 95 },
       { name: 'Tailwind CSS', level: 92 },
+      { name: 'Bootstrap 5', level: 90 },
       { name: 'SASS/SCSS', level: 90 },
     ],
   },
