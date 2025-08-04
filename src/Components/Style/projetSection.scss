@@ -77,21 +77,23 @@
     }
 
     .project-content {
-      padding: 2rem;
+      // padding: 0 2rem ;
       position: relative;
       z-index: 1;
 
-      h3 {
-        font-size: 1.5rem;
+      h5 {
+        font-size: 1.1rem;
         font-weight: 600;
         color: #1a1a1a;
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
+        margin: 10px 25px;
       }
 
       .project-links {
+        margin: 10px 25px;
         display: flex;
         gap: 1rem;
-        margin-top: 1rem;
+        // margin-top: 1rem;
 
         .project-link {
           display: flex;

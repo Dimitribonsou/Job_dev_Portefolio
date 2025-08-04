@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaGithub, FaExternalLinkAlt, FaInfoCircle } from 'react-icons/fa';
+import image_projet from "./../assets/home_illustration.png";
 import projets from '../data/projet.json';
 import './Style/projetSection.scss';
 
@@ -57,7 +58,12 @@ const ProjetSection = () => {
               className="project-card"
             >
               <div className="project-content">
-                <h3>{projet.title}</h3>
+                <img
+                src={ projet.image ? projet.image :  image_projet}
+                alt={projet.title || "Projet"}
+                className="object-cover w-full h-20 md:h-24 rounded-tl-lg rounded-tr-lg"
+              />
+                <h5>{projet.title}</h5>
                 <div className="project-links">
                   <a
                     href={projet.lien}
@@ -69,28 +75,28 @@ const ProjetSection = () => {
                     <FaExternalLinkAlt />
                     <span>Voir le projet</span>
                   </a>
-                  {projet.lien && (
+                  {/* {projet.lien && (
                     <a
                       href={projet.lien}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="project-link"
                       aria-label="Details"
-                      onClick={(e) => {
-                        e.preventDefault();
-                        const overlay = document.querySelector('.project-overlay');
-                        if (overlay) {
-                          (overlay as HTMLElement).style.display = (overlay as HTMLElement).style.display === 'block' ? 'none' : 'block';
-                        }
-                      }}
+                      // onClick={(e) => {
+                      //   e.preventDefault();
+                      //   const overlay = document.querySelector('.project-overlay');
+                      //   if (overlay) {
+                      //     (overlay as HTMLElement).style.display = (overlay as HTMLElement).style.display === 'block' ? 'none' : 'block';
+                      //   }
+                      // }}
                     >
                       <FaInfoCircle />
                       <span>Details</span>
                     </a>
-                  )}
+                  )} */}
                 </div>
               </div>
-              <div className="project-overlay">
+              {/* <div className="project-overlay">
                 <div className="project-details">
                   <h4>Technologies utilisées</h4>
                   <div className="tech-stack">
@@ -104,7 +110,7 @@ const ProjetSection = () => {
                     {projet.description}
                   </p>
                 </div>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

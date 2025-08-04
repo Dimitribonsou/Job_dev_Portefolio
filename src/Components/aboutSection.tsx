@@ -82,13 +82,13 @@ const AboutSection = () => {
                 <div className="info-item">
                   <span className="label">Email</span>
                   <a href="mailto:dimitribonsou26@gmail.com" className="value">
-                    dimitribonsou26@gmail.com
+                    dimidev26@gmail.com
                   </a>
                 </div>
                 <div className="info-item">
                   <span className="label">Téléphone</span>
                   <a href="tel:+237674606328" className="value">
-                    +237 674 606 328
+                    +237 674 60 63 28
                   </a>
                 </div>
                 <div className="info-item">
