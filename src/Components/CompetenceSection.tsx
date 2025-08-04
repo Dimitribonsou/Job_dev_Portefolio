@@ -40,7 +40,7 @@ const skills: Skill[] = [
       { name: 'C#', level: 75 },
       { name: 'Express.js', level: 88 },
       { name: 'REST APIs', level: 90 },
-      { name: 'GraphQL', level: 75 },
+      // { name: 'GraphQL', level: 75 },
     ],
   },
   {
