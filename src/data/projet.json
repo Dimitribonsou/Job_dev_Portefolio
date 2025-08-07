@@ -1,88 +1,52 @@
 [
   {
-    "title": "Maquete d'une plateforme de banque d'epreuve pour etudiant",
-    "lien": "https://www.figma.com/proto/lXZi5RuAOJ4E5TFjYiak6v/Projet_banque_epreuve?node-id=117-205&p=f&t=wrRuOPq0ujW3eTtp-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=117%3A205",
-    "description": "Maquette interactive d'une plateforme permettant aux étudiants d'accéder à une banque d'épreuves et de s'entraîner.",
-    "technologies": ["Figma", "UI/UX Design", "Prototypage"],
-    "image": "https://images.unsplash.com/photo-1523240794102-9eb5ccb88336?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    "title": "Maquete du site web de Global Visa",
-    "lien": "https://www.figma.com/proto/9bho2bdP0FrgipVW8Y2IrJ/Site-Global-Visa?t=V6jrzQuU0zmdwzyL-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=6-8&starting-point-node-id=6%3A8",
-    "description": "Maquette interactive d'un site web pour Global Visa, facilitant la navigation et la demande de visas.",
-    "technologies": ["Figma", "UI/UX Design", "Prototypage"],
-    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    "title": "Maquete interactif du site web de Sun Vin Technology",
-    "lien": "https://www.figma.com/proto/57GQxSMC9RY7FNMgW0yzvc/Site-Sun-vin-technology?t=V6jrzQuU0zmdwzyL-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=11-19&starting-point-node-id=11%3A19",
-    "description": "Maquette interactive d'un site web pour Sun Vin Technology, mettant en avant leurs services et produits.",
-    "technologies": ["Figma", "UI/UX Design", "Prototypage"],
-    "image": "https://images.unsplash.com/photo-1518709268805-4e9042af2176?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    "title": "Maquete interactif d'une plateforme de présentation des hôtels dans la ville de douala",
-    "lien": "https://www.figma.com/proto/AM2jo7sUt4lmx15thv0RNP/Presentation-Hotels?node-id=9-11&starting-point-node-id=9%3A11",
-    "description": "Maquette interactive d'une plqteforme de présentation des hôtels, permettant aux utilisateurs de découvrir les offres et services.",
-    "technologies": ["Figma", "UI/UX Design", "Prototypage"],
-    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    "title": "Porte-folio pour développeur",
-    "lien": "https://dimitribonsou-website.vercel.app/",
-    "description": "Portfolio personnel présentant mes compétences et réalisations en tant que développeur full-stack.",
-    "technologies": ["React", "TypeScript", "SCSS", "GSAP", "Tailwind CSS"],
-    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    "title": "Plateforme web de présentation des produits",
-    "lien": "https://dimishop.vercel.app",
-    "description": "Site e-commerce moderne avec présentation des produits et système de panier.",
-    "technologies": ["AngularJs", "Bootstrap","SCSS","TypeScript"],
-    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    "title": "Prototype Site web Restaurant Burger",
-    "lien": "https://www.figma.com/proto/30vtdl3FdaTMKKu1xUAgZB/Site-web-restaurant?node-id=1-2&t=PioPsmwqzxwmFOFM-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1",
-    "description": "Prototype interactif d'un site web pour un restaurant de burgers avec menu et réservation.",
-    "technologies": ["Figma", "UI/UX Design", "Prototypage"],
-    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    "title": "Réalisation du site web de DECODE",
-    "lien": "https://site-final-decode.vercel.app/",
-    "description": "Site web vitrine pour l'entreprise DECODE, présentant leurs services et réalisations.",
-    "technologies": ["React", "Tailwind CSS", "Framer Motion"],
-    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    "title": "Site de présentation d'une entreprise de prestation de service",
-    "lien": "https://startup-siteweb.vercel.app/",
-    "description": "Site web professionnel pour une startup de services, avec présentation des offres et contact.",
+    "title": "Site web de la BISDC",
+    "lien": "https://bisdc-awv40pow3gueka5q.builder-preview.com/",
+    "description": "Site web de la BISDC",
     "technologies": ["React", "Bootstrap", "JavaScript", "CSS3"],
-    "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80"
-  },
-  {
-    "title": "Site de présentation d'une entreprise de bâtiment",
-    "lien": "https://construction-website-nu.vercel.app/",
-    "description": "Site web pour une entreprise de construction, présentant leurs projets et services.",
-    "technologies": ["CSS3", "HTML5", "SCSS", "GSAP"],
-    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "site web"
   },
   {
     "title": "Application de gestion des finances personnelles",
     "lien": "https://depensetrack.commaxio.com",
     "description": "Application web permettant de suivre et gérer ses dépenses personnelles.",
     "technologies": ["PHP","CSS3","Bootstrap","HTML5","JQUERY"],
-    "image": "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?auto=format&fit=crop&w=800&q=80"
-  }
-  ,
+    "image": "https://images.unsplash.com/photo-1580519542036-c47de6196ba5?auto=format&fit=crop&w=800&q=80",
+    "category": "finance"
+  },
+  {
+    "title": "Porte-folio pour développeur",
+    "lien": "https://dimitribonsou-website.vercel.app/",
+    "description": "Portfolio personnel présentant mes compétences et réalisations en tant que développeur full-stack.",
+    "technologies": ["React", "TypeScript", "SCSS", "GSAP", "Tailwind CSS"],
+    "image": "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    "category": "portefolio"
+  },
+  {
+    "title": "Plateforme de collecte des informations des etudiants AlumniDocs",
+    "lien": "https://front-end-alumni-docs.vercel.app/",
+    "description": "Plateforme de collecte des informations des etudiants",
+    "technologies": ["React", "TypeScript", "SCSS", "GSAP", "Tailwind CSS"],
+    "image": "https://plus.unsplash.com/premium_photo-1725408006810-53ae337c6efd?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "education"
+  },
+
+  {
+    "title": "Plateforme collaborative pour les services publics",
+    "lien": "https://2sens-webapp-test.vercel.app/home",
+    "description": "Plateforme collaborative pour les services publics",
+    "technologies": ["Angular", "TypeScript", "SCSS", "GSAP", " Bootrap 5"],
+    "image": "https://images.unsplash.com/photo-1580795479172-6c29db0fd7c4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "public services"
+  },
   {
     "title": "Convertisseur de devise",
     "lien": "https://convertisseur-devise-dimidev.vercel.app/",
     "description": "Application web de conversion de devises en temps réel.",
     "technologies": ["React", "API REST", "Axios", "CSS Modules"],
-    "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80",
+    "category": "finance"
   }
   ,
   {
@@ -90,21 +54,121 @@
     "lien": "https://dimidev-appartement-chambre.vercel.app/",
     "description": "Plateforme de mise en relation pour la location d'appartements et chambres.",
     "technologies": ["React", "Tailwind CSS", "Material-UI"],
-    "image": "https://images.unsplash.com/photo-1571091718767-18b5b1457add?auto=format&fit=crop&w=800&q=80"
+    "image": "https://images.unsplash.com/photo-1516156008625-3a9d6067fab5?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "site web"
   },
   {
     "title": "Site web Restaurant Burger Express",
     "lien": "https://site-restaurant-burger.vercel.app/",
     "description": "Site web pour un restaurant de burgers avec menu, réservation et commande en ligne.",
     "technologies": ["HTML5","JavaScript", "Tailwind CSS"],
-    "image": "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?auto=format&fit=crop&w=800&q=80"
+    "image": "https://plus.unsplash.com/premium_photo-1661601722152-87143d4be5b9?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "food"
+  },
+  {
+    "title": "Prototype d'une plateforme de banque d'epreuve pour etudiant",
+    "lien": "https://www.figma.com/proto/lXZi5RuAOJ4E5TFjYiak6v/Projet_banque_epreuve?node-id=117-205&p=f&t=wrRuOPq0ujW3eTtp-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=117%3A205",
+    "description": "Maquette interactive d'une plateforme permettant aux étudiants d'accéder à une banque d'épreuves et de s'entraîner.",
+    "technologies": ["Figma", "UI/UX Design", "Prototypage"],
+    "image": "https://images.unsplash.com/photo-1568650108567-f040f546ce15?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "ui-ux"
+  },
+  {
+    "title": "Prototype d'une plateforme collaborative pour les services publics",
+    "lien": "https://www.figma.com/proto/eNWEwbCC49qCUh2bLcRWnl/Projet_2SENS?node-id=40-434&p=f&t=FBtIApxkOjdJgcsI-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=40%3A434",
+    "description": "Prototype d'une plateforme collaborative pour les services publics",
+    "technologies": ["Figma", "UI/UX Design", "Prototypage"],
+    "image": "https://plus.unsplash.com/premium_photo-1661574784307-3bc01586ccc8?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "ui-ux"
+  },
+  {
+    "title": "Prototype plateforme de collecte des informations des etudiants AlumniDocs",
+    "lien": "https://plus.unsplash.com/premium_photo-1681248156494-b72275ff6b51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "description":"Prototype plateforme de collecte des informations des etudiants AlumniDocs",
+    "technologies": ["Figma", "UI/UX Design", "Prototypage"],
+    "image": "https://plus.unsplash.com/premium_photo-1661574784307-3bc01586ccc8?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "ui-ux"
+  },
+  {
+    "title": "Prototype Site web de la BISDC",
+    "lien": "https://www.figma.com/proto/UG0tf0qq8zjywrFbzPBsA6/Site-de-la-BISDC?node-id=2-2&p=f&t=R5GhbgSWhjZmoHY0-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=2%3A2",
+    "description": "Prototype du site web de BISDC",
+    "technologies": ["Figma", "UI/UX Design", "Prototypage"],
+    "image": "https://plus.unsplash.com/premium_photo-1682140993556-f263e434000b?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "ui-ux"
+  },
+  {
+    "title": "prototype du site web de Global Visa",
+    "lien": "https://www.figma.com/proto/9bho2bdP0FrgipVW8Y2IrJ/Site-Global-Visa?t=V6jrzQuU0zmdwzyL-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=6-8&starting-point-node-id=6%3A8",
+    "description": "Maquette interactive d'un site web pour Global Visa, facilitant la navigation et la demande de visas.",
+    "technologies": ["Figma", "UI/UX Design", "Prototypage"],
+    "image": "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=800&q=80",
+    "category": "ui-ux"
+  },
+  {
+    "title": "prototype interactif du site web de Sun Vin Technology",
+    "lien": "https://www.figma.com/proto/57GQxSMC9RY7FNMgW0yzvc/Site-Sun-vin-technology?t=V6jrzQuU0zmdwzyL-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&node-id=11-19&starting-point-node-id=11%3A19",
+    "description": "Maquette interactive d'un site web pour Sun Vin Technology, mettant en avant leurs services et produits.",
+    "technologies": ["Figma", "UI/UX Design", "Prototypage"],
+    "image": "https://plus.unsplash.com/premium_photo-1682148265567-b3f301bffa84?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "ui-ux"
+  },
+  {
+    "title": "Prototype interactif d'une plateforme de présentation des hôtels dans la ville de douala",
+    "lien": "https://www.figma.com/proto/AM2jo7sUt4lmx15thv0RNP/Presentation-Hotels?node-id=9-11&starting-point-node-id=9%3A11",
+    "description": "Maquette interactive d'une plqteforme de présentation des hôtels, permettant aux utilisateurs de découvrir les offres et services.",
+    "technologies": ["Figma", "UI/UX Design", "Prototypage"],
+    "image": "https://images.unsplash.com/photo-1566073771259-6a8506099945?auto=format&fit=crop&w=800&q=80",
+    "category": "ui-ux"
+  },
+  {
+    "title": "Plateforme web de présentation des produits",
+    "lien": "https://dimishop.vercel.app",
+    "description": "Site e-commerce moderne avec présentation des produits et système de panier.",
+    "technologies": ["AngularJs", "Bootstrap","SCSS","TypeScript"],
+    "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+    "category": "ecommerce"
+  },
+  {
+    "title": "Prototype Site web Restaurant Burger",
+    "lien": "https://www.figma.com/proto/30vtdl3FdaTMKKu1xUAgZB/Site-web-restaurant?node-id=1-2&t=PioPsmwqzxwmFOFM-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A2&show-proto-sidebar=1",
+    "description": "Prototype interactif d'un site web pour un restaurant de burgers avec menu et réservation.",
+    "technologies": ["Figma", "UI/UX Design", "Prototypage"],
+    "image": "https://plus.unsplash.com/premium_photo-1669295245622-568fecaf293f?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "category": "ui-ux"
+  },
+  {
+    "title": "Réalisation du site web de DECODE",
+    "lien": "https://site-final-decode.vercel.app/",
+    "description": "Site web vitrine pour l'entreprise DECODE, présentant leurs services et réalisations.",
+    "technologies": ["React", "Tailwind CSS", "Framer Motion"],
+    "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80",
+    "category": "site web"
+  },
+  {
+    "title": "Site de présentation d'une entreprise de prestation de service",
+    "lien": "https://startup-siteweb.vercel.app/",
+    "description": "Site web professionnel pour une startup de services, avec présentation des offres et contact.",
+    "technologies": ["React", "Bootstrap", "JavaScript", "CSS3"],
+    "image": "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=800&q=80",
+    "category": "site web"
+  },
+ 
+  {
+    "title": "Site de présentation d'une entreprise de bâtiment",
+    "lien": "https://construction-website-nu.vercel.app/",
+    "description": "Site web pour une entreprise de construction, présentant leurs projets et services.",
+    "technologies": ["CSS3", "HTML5", "SCSS", "GSAP"],
+    "image": "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=800&q=80",
+    "category": "site web"
   },
   {
     "title": "Application de génération de carte Pour personnel ou etudiant",
     "lien": "#",
     "description": "Application web permettant de générer des cartes d'identité personnalisées.",
     "technologies": ["PHP","CSS3", "HTML5"],
-    "image": "https://images.unsplash.com/photo-1554224154-26032cdc-7c08?auto=format&fit=crop&w=800&q=80"
+    "image": "https://media.istockphoto.com/id/1407324683/photo/traffic-control-on-street.jpg?s=1024x1024&w=is&k=20&c=9kXAC1oWK2S1PVooazbLm-8e8BCD1asJ8elUq_WFG-I=",
+    "category": "services"
   }
 ]
 

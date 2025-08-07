@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { FaGithub, FaExternalLinkAlt, FaInfoCircle } from 'react-icons/fa';
@@ -11,6 +11,36 @@ gsap.registerPlugin(ScrollTrigger);
 const ProjetSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
   const cardsRef = useRef<(HTMLDivElement | null)[]>([]);
+  const [activeFilter, setActiveFilter] = useState('all');
+  const [filteredProjects, setFilteredProjects] = useState(projets);
+
+  // Définir les catégories de filtres
+  const filterCategories = [
+    { id: 'all', label: 'Tous' },
+    { id: 'site web', label: 'Site web' },
+    { id: 'portefolio', label: 'Portefolio' },
+    { id: 'ui-ux', label: 'Design UI/UX' },
+    // { id: 'ecommerce', label: 'E-commerce' },
+    // { id: 'technology', label: 'Technologie' },
+    // { id: 'services', label: 'Services' },
+    { id: 'finance', label: 'Finance' },
+    { id: 'education', label: 'Éducation' },
+    { id: 'food', label: 'Restauration' },
+    // { id: 'real estate', label: 'Immobilier' },
+    // { id: 'construction', label: 'Construction' },
+    { id: 'public services', label: 'Services Publics' }
+  ];
+
+  // Filtrer les projets
+  const filterProjects = (category: string) => {
+    setActiveFilter(category);
+    if (category === 'all') {
+      setFilteredProjects(projets);
+    } else {
+      const filtered = projets.filter(projet => projet.category === category);
+      setFilteredProjects(filtered);
+    }
+  };
 
   useEffect(() => {
     const cards = cardsRef.current;
@@ -35,7 +65,7 @@ const ProjetSection = () => {
         });
       }
     });
-  }, []);
+  }, [filteredProjects]);
 
   return (
     <section ref={sectionRef} id="projets" className="projet-section">
@@ -50,8 +80,23 @@ const ProjetSection = () => {
           en développement web et mobile.
         </p>
 
+        {/* Filtres */}
+        <div className="filter-container">
+          <div className="filter-tabs">
+            {filterCategories.map((category) => (
+              <button
+                key={category.id}
+                className={`filter-tab ${activeFilter === category.id ? 'active' : ''}`}
+                onClick={() => filterProjects(category.id)}
+              >
+                {category.label}
+              </button>
+            ))}
+          </div>
+        </div>
+
         <div className="projects-grid">
-          {projets.map((projet, index) => (
+          {filteredProjects.map((projet, index) => (
             <div
               key={projet.title}
               ref={(el:any) => cardsRef.current[index] = el}
@@ -75,42 +120,8 @@ const ProjetSection = () => {
                     <FaExternalLinkAlt />
                     <span>Voir le projet</span>
                   </a>
-                  {/* {projet.lien && (
-                    <a
-                      href={projet.lien}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="project-link"
-                      aria-label="Details"
-                      // onClick={(e) => {
-                      //   e.preventDefault();
-                      //   const overlay = document.querySelector('.project-overlay');
-                      //   if (overlay) {
-                      //     (overlay as HTMLElement).style.display = (overlay as HTMLElement).style.display === 'block' ? 'none' : 'block';
-                      //   }
-                      // }}
-                    >
-                      <FaInfoCircle />
-                      <span>Details</span>
-                    </a>
-                  )} */}
                 </div>
               </div>
-              {/* <div className="project-overlay">
-                <div className="project-details">
-                  <h4>Technologies utilisées</h4>
-                  <div className="tech-stack">
-                    {projet.technologies?.map((tech, i) => (
-                      <span key={i} className="tech-tag">
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                  <p className="project-description">
-                    {projet.description}
-                  </p>
-                </div>
-              </div> */}
             </div>
           ))}
         </div>
