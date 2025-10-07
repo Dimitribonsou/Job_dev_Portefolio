@@ -58,7 +58,7 @@ const HomeSection = () => {
               <span className="label">Années d'expérience</span>
             </div>
             <div className="stat-item">
-              <span className="number">20+</span>
+              <span className="number">15+</span>
               <span className="label">Projets réalisés</span>
             </div>
             <div className="stat-item">
