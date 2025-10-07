@@ -36,10 +36,10 @@ function App() {
       <div className={`app ${theme}`}>
         <Helmet htmlAttributes={{ lang: 'fr' }}>
           <title>Dimitri Bonsou | Développeur Web & Mobile Full-Stack</title>
-          <meta name="description" content="Développeur web et mobile full-stack à Douala, Cameroun. Expert en création de solutions web modernes, applications mobiles et sites e-commerce sur mesure." />
+          <meta name="description" content="Développeur web et mobile full-stack à Douala, France. Expert en création de solutions web modernes, applications mobiles et sites e-commerce sur mesure." />
           <meta name="keywords" content="développeur web douala, développeur mobile cameroun, full-stack developer, création site web, application mobile, e-commerce, freelance, dimidev, dimitri bonsou" />
           <meta property="og:title" content="Dimitri Bonsou | Développeur Web & Mobile Full-Stack" />
-          <meta property="og:description" content="Transformez vos idées en solutions digitales performantes. Expert en développement web et mobile à Douala, Cameroun." />
+          <meta property="og:description" content="Transformez vos idées en solutions digitales performantes. Expert en développement web et mobile à Limoges, France." />
           <meta property="og:url" content="https://dimidevofficiel.vercel.app" />
           <meta property="og:image" content={logo} />
           <meta name="google-site-verification" content="C5ftg5VXj5bdp7FA8aBYQZt-xwKjbTg4xNj8wQyzUZM" />
