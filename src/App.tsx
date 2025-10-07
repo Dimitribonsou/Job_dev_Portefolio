@@ -18,7 +18,7 @@ export const ThemeContext = React.createContext({
 
 function App() {
   const [theme, setTheme] = useState(() => {
-    const savedTheme = localStorage.getItem('theme');
+    const savedTheme = localStorage.getItem('theme')
     return savedTheme || 'dark';
   });
 
